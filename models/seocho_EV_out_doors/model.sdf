@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+<model name='seocho_EV_out_doors'>
+  <static>1</static>
+  <allow_auto_disable>1</allow_auto_disable>
+  <link name='seocho_EV_out_doors_L_link'>
+    <collision name='collision'>
+      <geometry>
+        <mesh>
+          <scale>0.1 0.1 0.1</scale>
+          <uri>model://seocho_EV_out_doors/meshes/B1_EV_door_L_out_col.obj</uri>
+        </mesh>
+      </geometry>
+    </collision>
+    <visual name='visual'>
+      <geometry>
+        <mesh>
+          <scale>0.1 0.1 0.1</scale>
+          <uri>model://seocho_EV_out_doors/meshes/B1_EV_door_L_out.obj</uri>
+        </mesh>
+      </geometry>
+      <material>
+        <emissive>0.7 0.7 0.7 0.7</emissive>
+      </material>
+    </visual>
+  </link>
+  <link name='seocho_EV_out_doors_R_link'>
+    <collision name='collision'>
+      <geometry>
+        <mesh>
+          <scale>0.1 0.1 0.1</scale>
+          <uri>model://seocho_EV_out_doors/meshes/B1_EV_door_R_out_col.obj</uri>
+        </mesh>
+      </geometry>
+    </collision>
+    <visual name='visual'>
+      <geometry>
+        <mesh>
+          <scale>0.1 0.1 0.1</scale>
+          <uri>model://seocho_EV_out_doors/meshes/B1_EV_door_R_out.obj</uri>
+        </mesh>
+      </geometry>
+      <material>
+        <emissive>0.7 0.7 0.7 0.7</emissive>
+      </material>
+    </visual>
+  </link>
+</model>
+</sdf>

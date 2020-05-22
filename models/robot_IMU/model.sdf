@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<sdf version='1.6'>
+<model name='IMU'>
+  <allow_auto_disable>1</allow_auto_disable>
+  <link name='link_imu'>
+    <inertial>
+      <mass>0.002</mass>
+      <inertia>
+        <ixx>0.00000003</ixx>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyy>0.00000003</iyy>
+        <iyz>0</iyz>
+        <izz>0.00000003</izz>
+      </inertia>
+    </inertial>
+
+    <gravity>0</gravity>
+    <self_collide>0</self_collide>
+    <kinematic>0</kinematic>
+    <enable_wind>0</enable_wind>
+
+    <visual name='visual'>
+      <geometry>
+        <box>
+          <size>0.01 0.01 0.01</size>
+        </box>
+      </geometry>
+      <material>
+        <lighting>1</lighting>
+        <script>
+          <uri>file://media/materials/scripts/gazebo.material</uri>
+          <name>Gazebo/Grey</name>
+        </script>
+        <shader type='vertex'>
+          <normal_map>__default__</normal_map>
+        </shader>
+        <ambient>0.3 0.3 0.3 1</ambient>
+        <diffuse>0.7 0.7 0.7 1</diffuse>
+        <specular>0.01 0.01 0.01 1</specular>
+        <emissive>0 0 0 1</emissive>
+      </material>
+      <transparency>0</transparency>
+      <cast_shadows>1</cast_shadows>
+    </visual>
+
+    <!--
+    <collision name='collision_IMUSensor'>
+      <max_contacts>0</max_contacts>
+      <geometry>
+        <box>
+          <size>0.01 0.01 0.01</size>
+        </box>
+      </geometry>
+    </collision>
+    -->
+
+    <sensor name='imu_sensor' type='imu'>
+      <imu>
+        <angular_velocity>
+          <x>
+            <noise type='none'/>
+          </x>
+          <y>
+            <noise type='none'/>
+          </y>
+          <z>
+            <noise type='none'/>
+          </z>
+        </angular_velocity>
+        <linear_acceleration>
+          <x>
+            <noise type='none'/>
+          </x>
+          <y>
+            <noise type='none'/>
+          </y>
+          <z>
+            <noise type='none'/>
+          </z>
+        </linear_acceleration>
+      </imu>
+      <always_on>1</always_on>
+      <update_rate>30</update_rate>
+    </sensor>
+  </link>
+</model>
+</sdf>

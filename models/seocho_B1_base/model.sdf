@@ -1,0 +1,86 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+<model name='seocho_B1_base'>
+  <static>1</static>
+  <allow_auto_disable>1</allow_auto_disable>
+  <link name='B1_body_link'>
+    <collision name='collision'>
+      <geometry>
+        <mesh>
+          <scale>0.1 0.1 0.1</scale>
+          <uri>model://seocho_B1_base/meshes/B1_collision.obj</uri>
+        </mesh>
+      </geometry>
+    </collision>
+      <collision name='floor_collision'>
+        <geometry>
+          <mesh>
+            <scale>0.1 0.1 0.1</scale>
+            <uri>model://seocho_B1_base/meshes/B1_bottom_col.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    <visual name='visual'>
+      <geometry>
+        <mesh>
+          <scale>0.1 0.1 0.1</scale>
+          <uri>model://seocho_B1_base/meshes/B1_base.obj</uri>
+        </mesh>
+      </geometry>
+      <material>
+        <emissive>0.7 0.7 0.7 0.7</emissive>
+      </material>
+    </visual>
+  </link>
+  <link name='seocho25_glass_link'>
+    <visual name='visual'>
+      <geometry>
+        <mesh>
+          <scale>0.1 0.1 0.1</scale>
+          <uri>model://seocho_B1_base/meshes/B1_glass.obj</uri>
+        </mesh>
+      </geometry>
+      <material>
+        <diffuse>0 0.5 0 0.5</diffuse>
+      </material>
+    </visual>
+  </link>
+
+  <include>
+    <name>EV_1_outside_door</name>
+    <pose>-50.3762 -27.43527 -6.61125 0 0 0</pose>
+    <uri>model://seocho_EV_out_doors</uri>
+  </include>
+
+  <include>
+    <name>EV_2_outside_door</name>
+    <pose>-53.3583 -27.43527 -6.61125 0 0 0</pose>
+    <uri>model://seocho_EV_out_doors</uri>
+  </include>
+
+  <include>
+    <name>EV_3_outside_door</name>
+    <pose>-56.34427 -27.43527 -6.61125 0 0 0</pose>
+    <uri>model://seocho_EV_out_doors</uri>
+  </include>
+
+  <include>
+    <name>EV_4_outside_door</name>
+    <pose>-50.377726 -31.04938 -6.61125 0 0 -3.140000</pose>
+    <uri>model://seocho_EV_out_doors</uri>
+  </include>
+
+  <include>
+    <name>EV_5_outside_door</name>
+    <pose>-53.35871 -31.04938 -6.61125 0 0 -3.140000</pose>
+    <uri>model://seocho_EV_out_doors</uri>
+  </include>
+
+  <include>
+    <name>EV_6_outside_door</name>
+    <pose>-56.34862 -31.04938 -6.61125 0 0 -3.140000</pose>
+    <uri>model://seocho_EV_out_doors</uri>
+  </include>
+
+</model>
+</sdf>

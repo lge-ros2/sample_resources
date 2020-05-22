@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+<model name="SeochoTower">
+  <static>1</static>
+
+  <include>
+    <name>B1F</name>
+    <uri>model://seocho_B1_base</uri>
+  </include>
+
+  <include>
+    <name>25F</name>
+    <uri>model://seocho_25F_base</uri>
+  </include>
+
+  <include>
+    <name>Elevator_00</name>
+    <pose>-50.38048 -26.93626 -6.61037 0 0 0</pose>
+    <uri>model://seocho_EV</uri>
+  </include>
+
+  <include>
+    <name>Elevator_01</name>
+    <pose>-53.36258 -26.93626 -6.61037 0 0 0</pose>
+    <uri>model://seocho_EV</uri>
+  </include>
+
+  <include>
+    <name>Elevator_02</name>
+    <pose>-56.34855 -26.93626 -6.61037 0 0 0</pose>
+    <uri>model://seocho_EV</uri>
+  </include>
+
+  <include>
+    <name>Elevator_03</name>
+    <pose>-50.37298 -31.54849 -6.61037 0 0 -3.140000</pose>
+    <uri>model://seocho_EV</uri>
+  </include>
+
+  <include>
+    <name>Elevator_04</name>
+    <pose>-53.35443 -31.54849 -6.61037 0 0 -3.140000</pose>
+    <uri>model://seocho_EV</uri>
+  </include>
+
+  <include>
+    <name>Elevator_05</name>
+    <pose>-56.34433 -31.54849 -6.61037 0 0 -3.140000</pose>
+    <uri>model://seocho_EV</uri>
+  </include>
+
+  <plugin name="ElevatorSystem" filename="">
+    <elevator prefix_name="Elevator_" speed="30">
+      <floor>floor_collision</floor>
+      <doors speed="0.6" closing_timer="7.0">
+        <inside open_offset="0.567">
+          <door name="left">seocho_EV_door_L_link</door>
+          <door name="right">seocho_EV_door_R_link</door>
+        </inside>
+        <outside open_offset="0.567">
+          <door name="left">seocho_EV_out_doors_L_link</door>
+          <door name="right">seocho_EV_out_doors_R_link</door>
+        </outside>
+      </doors>
+    </elevator>
+    <floors>
+      <floor>
+        <name>B1F</name>
+        <height>-6.61037</height>
+      </floor>
+      <floor>
+        <name>25F</name>
+        <height>150.13362</height>
+      </floor>
+    </floors>
+  </plugin>
+</model>
+</sdf>

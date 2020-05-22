@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+<world name="lg_seocho_world">
+  <gui>
+    <camera name="user_camera">
+      <pose>-47.37 -29.29 -4.5 0 0.523 1.5707</pose>
+    </camera>
+  </gui>
+
+  <include>
+    <uri>model://map_lg_seocho</uri>
+  </include>
+
+  <include>
+    <name>cloi1</name>
+    <uri>model://CLOi_porter</uri>
+    <pose>-43.81 -28.77 -6.546 0 0 3.14</pose>
+  </include>
+
+  <include>
+    <name>cloi2</name>
+    <uri>model://CLOi_porter</uri>
+    <pose>-39.81 -38.77 -6.546 0 0 3.14</pose>
+  </include>
+
+  <include>
+    <name>cloi3</name>
+    <uri>model://CLOi_porter</uri>
+    <pose>-34.81 -38.77 -6.546 0 0 3.14</pose>
+  </include>
+</world>
+</sdf>

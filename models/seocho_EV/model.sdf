@@ -1,0 +1,82 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+<model name='seocho_EV'>
+  <allow_auto_disable>1</allow_auto_disable>
+  <link name='floor'>
+    <kinematic>1</kinematic>
+    <inertial>
+      <mass>500</mass>
+    </inertial>
+    <gravity>0</gravity>
+
+    <collision name='floor_collision'>
+      <geometry>
+        <mesh>
+          <scale>0.1 0.1 0.1</scale>
+          <uri>model://seocho_EV/meshes/EV_col.obj</uri>
+        </mesh>
+      </geometry>
+    </collision>
+
+    <visual name='floor_visual'>
+      <geometry>
+        <mesh>
+          <scale>0.1 0.1 0.1</scale>
+          <uri>model://seocho_EV/meshes/EV.obj</uri>
+        </mesh>
+      </geometry>
+      <material>
+        <emissive>0.7 0.7 0.7 0.7</emissive>
+      </material>
+    </visual>
+  </link>
+
+  <model name='Elevator_Doors'>
+    <static>1</static>
+    <allow_auto_disable>1</allow_auto_disable>
+    <pose>0.00428 -0.44789 -0.00088 0 0 0</pose>
+    <link name='seocho_EV_door_L_link'>
+      <collision name='collision'>
+        <geometry>
+          <mesh>
+            <scale>0.1 0.1 0.1</scale>
+            <uri>model://seocho_EV/meshes/EV_door_L_col.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='visual'>
+        <geometry>
+          <mesh>
+            <scale>0.1 0.1 0.1</scale>
+            <uri>model://seocho_EV/meshes/EV_door_L_in.obj</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <emissive>0.7 0.7 0.7 0.7</emissive>
+        </material>
+      </visual>
+    </link>
+    <link name='seocho_EV_door_R_link'>
+      <collision name='collision'>
+        <geometry>
+          <mesh>
+            <scale>0.1 0.1 0.1</scale>
+            <uri>model://seocho_EV/meshes/EV_door_R_col.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='visual'>
+        <geometry>
+          <mesh>
+            <scale>0.1 0.1 0.1</scale>
+            <uri>model://seocho_EV/meshes/EV_door_R_in.obj</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <emissive>0.7 0.7 0.7 0.7</emissive>
+        </material>
+      </visual>
+    </link>
+  </model>
+</model>
+</sdf>

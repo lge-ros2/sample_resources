@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<sdf version='1.6'>
+<model name='RobotWheelSuspension'>
+  <link name="link">
+    <inertial>
+      <mass>2</mass>
+      <inertia>
+        <ixx>0</ixx>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyy>0</iyy>
+        <iyz>0</iyz>
+        <izz>0</izz>
+      </inertia>
+    </inertial>
+    <!-- <collision name="collision">
+      <geometry>
+        <cylinder>
+          <radius>0.011</radius>
+          <length>0.10</length>
+        </cylinder>
+      </geometry>
+    </collision> -->
+    <visual name="visual">
+      <geometry>
+        <cylinder>
+          <radius>0.011</radius>
+          <length>0.10</length>
+        </cylinder>
+      </geometry>
+      <material>
+        <ambient>0.09 0.09 0.09 1</ambient>
+        <diffuse>0.95 0.9 0.85 1</diffuse>
+        <specular>0.95 0.9 0.85 1</specular>
+        <emissive>0.3 0.3 0.3 1</emissive>
+      </material>
+    </visual>
+  </link>
+</model>
+</sdf>

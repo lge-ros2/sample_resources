@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+<sdf version='1.6'>
+<model name='CLOIPorterCaster'>
+  <link name='link'>
+    <inertial>
+      <mass>0.2</mass>
+      <inertia>
+        <ixx>0.0</ixx>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyy>0.0</iyy>
+        <iyz>0</iyz>
+        <izz>0.0</izz>
+      </inertia>
+    </inertial>
+
+    <gravity>1</gravity>
+    <self_collide>0</self_collide>
+    <kinematic>0</kinematic>
+    <enable_wind>0</enable_wind>
+
+    <visual name='visual'>
+      <geometry>
+        <mesh>
+          <uri>model://CLOi_porter_caster/meshes/caster_hinge.stl</uri>
+        </mesh>
+      </geometry>
+      <material>
+        <lighting>1</lighting>
+        <ambient>1.0 1.0 1.0 1</ambient>
+        <diffuse>0.1 0.1 0.1 1</diffuse>
+        <specular>0.2 0.2 0.2 1</specular>
+        <emissive>0.01 0.01 0.01 1</emissive>
+      </material>
+      <cast_shadows>0</cast_shadows>
+      <transparency>0</transparency>
+    </visual>
+
+    <collision name='collision_caster_wheel'>
+      <max_contacts>0</max_contacts>
+      <geometry>
+        <mesh>
+          <uri>model://CLOi_porter_caster/meshes/caster_hinge.stl</uri>
+        </mesh>
+      </geometry>
+      <surface>
+        <friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+            <fdir1>0 0 1</fdir1>
+            <slip1>0.1</slip1>
+            <slip2>0.1</slip2>
+          </ode>
+        </friction>
+        <contact>
+          <poissons_ratio>0.40</poissons_ratio>
+          <elastic_modulus>0.40</elastic_modulus>
+          <ode>
+            <max_vel>0.0</max_vel>
+          </ode>
+        </contact>
+      </surface>
+    </collision>
+  </link>
+
+  <link name="link_caster_wheel">
+    <pose>0.04 0.0 -0.026 1.5708 0.0 0.0</pose>
+    <inertial>
+      <mass>0.3</mass>
+      <inertia>
+        <ixx>0.00028500</ixx>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyy>0.00028500</iyy>
+        <iyz>0</iyz>
+        <izz>0.00048000</izz>
+      </inertia>
+    </inertial>
+
+    <gravity>1</gravity>
+     <visual name='visual'>
+
+      <geometry>
+        <mesh>
+          <uri>model://CLOi_porter_caster/meshes/caster_wheel.stl</uri>
+        </mesh>
+      </geometry>
+      <material>
+        <lighting>1</lighting>
+        <ambient>1.0 1.0 1.0 1</ambient>
+        <diffuse>0.1 0.1 0.1 1</diffuse>
+        <specular>0.2 0.2 0.2 1</specular>
+        <emissive>0.01 0.01 0.01 1</emissive>
+      </material>
+      <cast_shadows>0</cast_shadows>
+      <transparency>0</transparency>
+    </visual>
+
+    <collision name='collision_caster_wheel'>
+      <max_contacts>2</max_contacts>
+      <geometry>
+        <cylinder>
+          <radius>0.04</radius>
+          <length>0.03</length>
+        </cylinder>
+      </geometry>
+      <surface>
+        <friction>
+          <ode>
+            <mu>0.8</mu>
+            <mu2>0.6</mu2>
+            <fdir1>0 0 1</fdir1>
+            <slip1>0.1</slip1>
+            <slip2>0.1</slip2>
+          </ode>
+        </friction>
+        <contact>
+          <poissons_ratio>0.40</poissons_ratio>
+          <elastic_modulus>0.40</elastic_modulus>
+          <ode>
+            <max_vel>0.0</max_vel>
+          </ode>
+        </contact>
+      </surface>
+    </collision>
+  </link>
+  <joint name='link_CLOi_porter_caster_wheel_joint' type='revolute'>
+    <parent>link</parent>
+    <child>link_caster_wheel</child>
+    <axis>
+      <xyz>0 0 -1</xyz>
+      <dynamics>
+        <friction>0.01</friction>
+      </dynamics>
+    </axis>
+  </joint>
+</model>
+</sdf>

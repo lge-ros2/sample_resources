@@ -1,0 +1,104 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+<model name="hokuyo_UAM05LPT301_gpu">
+  <static>0</static>
+  <link name="UAM05LPT301_link">
+    <inertial>
+      <mass>0.8</mass>
+      <inertia>
+        <ixx>0</ixx>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyy>0</iyy>
+        <iyz>0</iyz>
+        <izz>0</izz>
+      </inertia>
+    </inertial>
+    <self_collide>0</self_collide>
+    <enable_wind>0</enable_wind>
+    <kinematic>0</kinematic>
+
+    <visual name="visual">
+      <geometry>
+        <mesh>
+          <uri>model://hokuyo_UAM05LPT301_gpu/meshes/uam05lp.stl</uri>
+          <scale>1 1 1</scale>
+        </mesh>
+      </geometry>
+      <material>
+        <lighting>1</lighting>
+        <ambient>0.05 0.05 0.05 1</ambient>
+        <diffuse>0.5 0.5 0.2 1</diffuse>
+        <specular>0.5 0.5 0.1 1</specular>
+        <emissive>0.4 0.4 0.1 1</emissive>
+      </material>
+    </visual>
+
+    <collision name="collision">
+      <laser_retro>0</laser_retro>
+      <max_contacts>1</max_contacts>
+      <pose>0 0 0.02 0 -0 0</pose>
+      <geometry>
+        <box>
+          <size>0.07 0.07 0.04</size>
+        </box>
+      </geometry>
+      <surface>
+        <friction>
+          <ode>
+            <mu>0.9</mu>
+            <mu2>0.8</mu2>
+            <fdir1>0 0 0</fdir1>
+            <slip1>0.0</slip1>
+            <slip2>0.0</slip2>
+          </ode>
+        </friction>
+        <contact>
+          <poissons_ratio>0.33</poissons_ratio>
+          <elastic_modulus>0.33</elastic_modulus>
+          <ode>
+            <soft_cfm>0.0</soft_cfm>
+            <soft_erp>0.2</soft_erp>
+            <kp>1e+12</kp>
+            <kd>0.00</kd>
+            <max_vel>0.01</max_vel>
+            <min_depth>0.001</min_depth>
+          </ode>
+        </contact>
+      </surface>
+    </collision>
+
+    <sensor name="hokuyo_laser" type="gpu_ray">
+      <pose>0 0 0.070 0 -0 0</pose>
+      <ray>
+        <scan>
+          <horizontal>
+            <samples>1081</samples>
+            <resolution>1</resolution>
+            <min_angle>-2.35619</min_angle>
+            <max_angle>+2.35619</max_angle>
+          </horizontal>
+        </scan>
+        <range>
+          <min>0.03</min>
+          <max>20</max>
+          <resolution>0.004363</resolution><!-- 0.25 deg -->
+        </range>
+        <noise>
+          <type>custom</type>
+        </noise>
+      </ray>
+      <always_on>1</always_on>
+      <update_rate>33.33333</update_rate>
+      <visualize>false</visualize>
+      <plugin name="lidarSensorNoisePlugin" filename="">
+        <noise range_min="0" range_max="100" type="gaussian">
+          <error>1.0</error> <!-- target error +100mm ==> 0.100 -->
+          <stddev>0.03</stddev>
+        </noise>
+      </plugin>
+      <plugin name="LaserPlugin" filename="" />
+    </sensor>
+  </link>
+</model>
+</sdf>

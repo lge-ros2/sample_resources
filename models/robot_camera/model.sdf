@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<sdf version='1.6'>
+<model name='camera'>
+  <static>0</static>
+  <allow_auto_disable>1</allow_auto_disable>
+  <link name='link'>
+    <self_collide>0</self_collide>
+    <enable_wind>0</enable_wind>
+    <kinematic>0</kinematic>
+
+    <inertial>
+      <mass>0.8</mass>
+      <inertia>
+        <ixx>0.00133333</ixx>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyy>0.00133333</iyy>
+        <iyz>0</iyz>
+        <izz>0.00133333</izz>
+      </inertia>
+    </inertial>
+    <collision name='collision_camera'>
+      <geometry>
+        <box>
+          <size>0.030000 0.100000 0.025000</size>
+        </box>
+      </geometry>
+      <max_contacts>1</max_contacts>
+    </collision>
+    <visual name='visual_camera'>
+      <geometry>
+        <box>
+          <size>0.030000 0.100000 0.025000</size>
+        </box>
+      </geometry>
+    </visual>
+
+    <sensor name='camera' type='camera'>
+      <camera>
+        <save enabled="False">
+          <path>/home/yg/Pictures/cam</path>
+        </save>
+        <horizontal_fov>2.1</horizontal_fov>
+        <image>
+          <width>640</width>
+          <height>480</height>
+          <format>R8G8B8</format>
+        </image>
+        <clip>
+          <near>0.054</near>
+          <far>50</far>
+        </clip>
+        <noise>
+          <type>gaussian</type>
+          <mean>0.0</mean>
+          <stddev>0.00</stddev>
+        </noise>
+        <distortion>
+          <k1>0.10369</k1>
+          <k2>0.10328</k2>
+        </distortion>
+      </camera>
+
+      <always_on>1</always_on>
+      <update_rate>15</update_rate>
+      <visualize>0</visualize>
+      <plugin name='CameraPlugin' filename='libCameraPlugin.so'/>
+    </sensor>
+  </link>
+</model>
+</sdf>

@@ -38,7 +38,7 @@
     </visual>
 
     <!--
-    <collision name='collision_IMUSensor'>
+    <collision name='collision'>
       <max_contacts>0</max_contacts>
       <geometry>
         <box>

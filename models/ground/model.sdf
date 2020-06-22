@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+<model name='ground_plane'>
+  <static>true</static>
+  <link name='link'>
+    <collision name='collision'>
+      <geometry>
+        <plane>
+          <normal>0 0 1</normal>
+          <size>1000 1000</size>
+        </plane>
+      </geometry>
+      <surface>
+        <friction>
+          <ode>
+            <mu>100</mu>
+            <mu2>50</mu2>
+          </ode>
+        </friction>
+      </surface>
+      <max_contacts>10</max_contacts>
+    </collision>
+
+    <visual name='visual'>
+      <cast_shadows>0</cast_shadows>
+      <geometry>
+        <plane>
+          <normal>0 0 1</normal>
+          <size>1000 1000</size>
+        </plane>
+      </geometry>
+      <material>
+        <ambient>0.82 0.82 0.82 1.0</ambient>
+        <diffuse>0.9 0.9 0.9 1.0</diffuse>
+        <specular>0.9 0.9 0.9 1.0</specular>
+        <emissive>1.0 1.0 1.0 1.0</emissive>
+      </material>
+    </visual>
+
+    <self_collide>0</self_collide>
+    <enable_wind>0</enable_wind>
+    <kinematic>0</kinematic>
+  </link>
+</model>
+</sdf>

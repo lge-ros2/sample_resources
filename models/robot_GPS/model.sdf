@@ -93,6 +93,7 @@
           </vertical>
         </velocity_sensing>
       </gps>
+      <plugin name='GpsPlugin' filename='libGpsPlugin.so'/>
     </sensor>
   </link>
 </model>

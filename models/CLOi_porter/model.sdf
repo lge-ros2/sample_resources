@@ -252,6 +252,26 @@
     <child>lidar::UAM05LPT301_link</child>
   </joint>
 
+  <!-- <include>
+    <uri>model://robot_USS</uri>
+    <name>USS_left1</name>
+    <pose>0.05 -0.234100 0.069636 1.5707 0 0.21</pose>
+  </include>
+  <joint name='Joint_USS_left1' type='fixed'>
+    <parent>link_MainBody</parent>
+    <child>USS_left1::link_sonar</child>
+  </joint>
+
+  <include>
+    <uri>model://robot_GPS</uri>
+    <name>gps</name>
+    <pose>0.0 0.0 0.21 0.0 0.0 0.0</pose>
+  </include>
+  <joint name='Joint_GPS' type='fixed'>
+    <parent>link_MainBody</parent>
+    <child>gps::link</child>
+  </joint> -->
+
   <!--include>
   <uri>model://hokuyo_UAM05LPT301_gpu</uri>
   <name>rear_lidar</name>

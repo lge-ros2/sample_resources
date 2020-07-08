@@ -50,7 +50,6 @@
     </visual>
 
     <sensor name="sonar" type="sonar">
-      <pose>0 0 0 3.141592653 0 0</pose>
       <sonar>
         <min>0.02</min>
         <max>1.50</max>

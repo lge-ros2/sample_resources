@@ -121,14 +121,14 @@
         <update_rate>15</update_rate>
         <always_on>true</always_on>
       </sensor>
+      <plugin name="D435Plugin" filename="libRealSensePlugin.so">
+        <activate>
+          <module name='rgb'>rgb</module>
+          <module name='left_imager'>ir1</module>
+          <module name='right_imager'>ir2</module>
+          <module name='depth'>depth</module>
+        </activate>
+      </plugin>
     </link>
-    <plugin name="D435Plugin" filename="libRealSensePlugin.so">
-      <activate>
-        <module name='rgb'>rgb</module>
-        <module name='left_imager'>ir1</module>
-        <module name='right_imager'>ir2</module>
-        <module name='depth'>depth</module>
-      </activate>
-    </plugin>
   </model>
 </sdf>

@@ -222,7 +222,7 @@
     <child>multi_camera::link_multicam</child>
   </joint> -->
 
-  <include>
+  <!-- <include>
     <uri>model://robot_camera</uri>
     <name>camera</name>
     <pose>0.344000 0.0 1.014100 0.0 0.0 0.0</pose>
@@ -230,6 +230,16 @@
   <joint name='link_MainBody_JOINT_camera_front' type='fixed'>
     <parent>link_MainBody</parent>
     <child>camera::link</child>
+  </joint> -->
+
+  <include>
+    <uri>model://intel_D435</uri>
+    <name>realsense</name>
+    <pose>0.344000 0.0 1.014100 0.0 0.0 0.0</pose>
+  </include>
+  <joint name='link_MainBody_JOINT_realsense_front' type='fixed'>
+    <parent>link_MainBody</parent>
+    <child>realsense::link</child>
   </joint>
 
   <include>
@@ -255,12 +265,12 @@
   <!-- <include>
     <uri>model://robot_USS</uri>
     <name>USS_left1</name>
-    <pose>0.05 -0.234100 0.069636 1.5707 0 0.21</pose>
+    <pose>-0.0315 0.265 0.3505 1.570796329 0 0.1</pose>
   </include>
   <joint name='Joint_USS_left1' type='fixed'>
     <parent>link_MainBody</parent>
     <child>USS_left1::link_sonar</child>
-  </joint>
+  </joint> -->
 
   <include>
     <uri>model://robot_GPS</uri>
@@ -270,7 +280,7 @@
   <joint name='Joint_GPS' type='fixed'>
     <parent>link_MainBody</parent>
     <child>gps::link</child>
-  </joint> -->
+  </joint>
 
   <!--include>
   <uri>model://hokuyo_UAM05LPT301_gpu</uri>

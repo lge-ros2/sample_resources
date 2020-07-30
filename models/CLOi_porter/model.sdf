@@ -298,6 +298,16 @@
       <ki>0.2</ki>
       <kd>0.0</kd>
     </PID>
+    <uss>
+      <!-- <sensor>USS_left1</sensor> -->
+    </uss>
+    <ir>
+      <!-- <sensor>USS_left1</sensor> -->
+    </ir>
+    <magnet>
+    </magnet>
+    <bumper>
+    </bumper>
     <wheel>
       <base>449</base>
       <radius>95.5</radius>

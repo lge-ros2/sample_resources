@@ -91,12 +91,6 @@
       <always_on>1</always_on>
       <update_rate>33.33333</update_rate>
       <visualize>false</visualize>
-      <plugin name="LaserSensorNoisePlugin" filename="libLaserSensorNoisePlugin.so">
-        <noise range_min="0" range_max="100" type="gaussian">
-          <error>1.0</error> <!-- target error +100mm ==> 0.100 -->
-          <stddev>0.03</stddev>
-        </noise>
-      </plugin>
       <plugin name="LaserPlugin" filename="libLaserPlugin.so" />
     </sensor>
   </link>

@@ -270,16 +270,6 @@
   <joint name='Joint_USS_left1' type='fixed'>
     <parent>link_MainBody</parent>
     <child>USS_left1::link_sonar</child>
-  </joint>
-
-  <include>
-    <uri>model://robot_USS</uri>
-    <name>USS_right1</name>
-    <pose>-0.0315 -0.265 0.3505 -1.570796329 0 0.1</pose>
-  </include>
-  <joint name='Joint_USS_right1' type='fixed'>
-    <parent>link_MainBody</parent>
-    <child>USS_right1::link_sonar</child>
   </joint> -->
 
   <include>
@@ -319,8 +309,8 @@
     <bumper>
     </bumper>
     <wheel>
-      <base>0.449</base>
-      <radius>0.0955</radius>
+      <base>449</base>
+      <radius>95.5</radius>
       <location type="left">LeftWheel</location>
       <location type="right">RightWheel</location>
       <friction>

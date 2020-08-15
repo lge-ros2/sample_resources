@@ -10,9 +10,9 @@
         <ixz>0</ixz>
         <iyy>9.08066667</iyy>
         <iyz>0</iyz>
-        <izz>8.47600000</izz>
+        <izz>8.476</izz>
       </inertia>
-      <pose>0.0 0.0 0.25 0 -0 0</pose>
+      <pose>0 0 0.25 0 -0 0</pose>
     </inertial>
 
     <gravity>1</gravity>
@@ -73,12 +73,12 @@
   <include>
     <uri>model://CLOi_porter_wheel</uri>
     <name>LeftWheel</name>
-    <pose>0.001000 0.225000 0.0900 -1.570800 0.000000 0.000000</pose>
+    <pose>0.001 0.225 0.09 -1.570796327 0 0</pose>
   </include>
   <include>
     <uri>model://robot_wheel_suspension</uri>
     <name>SuspensionLeft</name>
-    <pose>0 0.158 0.105000 0.00000000 0.00000000 0.00000000</pose>
+    <pose>0 0.158 0.105 0 0 0</pose>
   </include>
   <joint name="Joint_link_MainBody_SuspLeft" type="prismatic">
     <parent>link_MainBody</parent>
@@ -86,7 +86,7 @@
     <axis>
       <xyz>0 0 1</xyz>
       <limit>
-        <upper>0.10</upper>
+        <upper>0.1</upper>
         <lower>0.0</lower>
       </limit>
       <dynamics>
@@ -112,12 +112,12 @@
   <include>
     <uri>model://CLOi_porter_wheel</uri>
     <name>RightWheel</name>
-    <pose>0.001000 -0.225000 0.0900 1.570800 0.000000 0.00000000</pose>
+    <pose>0.001 -0.225 0.09 1.570796327 0 0</pose>
   </include>
   <include>
     <uri>model://robot_wheel_suspension</uri>
     <name>SuspensionRight</name>
-    <pose>0 -0.158 0.105000 0.00000000 0.00000000 0.00000000</pose>
+    <pose>0 -0.158 0.105 0 0 0</pose>
   </include>
   <joint name="Joint_link_MainBody_SuspRight" type="prismatic">
     <parent>link_MainBody</parent>
@@ -125,7 +125,7 @@
     <axis>
       <xyz>0 0 1</xyz>
       <limit>
-        <upper>0.10</upper>
+        <upper>0.1</upper>
         <lower>0.0</lower>
       </limit>
       <dynamics>
@@ -151,7 +151,7 @@
   <include>
     <uri>model://CLOi_porter_caster</uri>
     <name>FL_caster</name>
-    <pose>0.220 0.1 0.066 0.0 0.0 0.0</pose>
+    <pose>0.22 0.1 0.066 0 0 0</pose>
   </include>
   <joint name='link_MainBody_Caster_FL' type='revolute'>
     <parent>link_MainBody</parent>
@@ -167,7 +167,7 @@
   <include>
     <uri>model://CLOi_porter_caster</uri>
     <name>FR_caster</name>
-    <pose>0.220 -0.1 0.066 0.0 0.0 0.0</pose>
+    <pose>0.22 -0.1 0.066 0 0 0</pose>
   </include>
   <joint name='link_MainBody_Caster_FR' type='revolute'>
     <parent>link_MainBody</parent>
@@ -183,7 +183,7 @@
   <include>
     <uri>model://CLOi_porter_caster</uri>
     <name>RL_caster</name>
-    <pose>-0.220 0.1 0.066 0.0 0.0 0.0</pose>
+    <pose>-0.220 0.1 0.066 0 0 0</pose>
   </include>
   <joint name='link_MainBody_Caster_RL' type='revolute'>
     <parent>link_MainBody</parent>
@@ -199,7 +199,7 @@
   <include>
     <uri>model://CLOi_porter_caster</uri>
     <name>RR_caster</name>
-    <pose>-0.220 -0.1 0.066 0.0 0.0 0.0</pose>
+    <pose>-0.220 -0.1 0.066 0 0 0</pose>
   </include>
   <joint name='link_MainBody_Caster_RR' type='revolute'>
     <parent>link_MainBody</parent>
@@ -215,7 +215,7 @@
   <!-- <include>
     <uri>model://CLOi_porter_multicam</uri>
     <name>multi_camera</name>
-    <pose>-0.048500 0.0 0.948300 0.0 -1.5707 0.0</pose>
+    <pose>-0.0485 0 0.9483 0 -1.570796327 0</pose>
   </include>
   <joint name='link_MainBody_JOINT_multicam' type='fixed'>
     <parent>link_MainBody</parent>
@@ -225,17 +225,27 @@
   <!-- <include>
     <uri>model://robot_camera</uri>
     <name>camera</name>
-    <pose>0.344000 0.0 1.014100 0.0 0.0 0.0</pose>
+    <pose>0.344 0 1.0141 0 0 0</pose>
   </include>
   <joint name='link_MainBody_JOINT_camera_front' type='fixed'>
     <parent>link_MainBody</parent>
     <child>camera::link</child>
   </joint> -->
 
+  <!-- <include>
+    <uri>model://robot_depthcam</uri>
+    <name>depthcamera</name>
+    <pose>0.344 0 1.0141 0 0 0</pose>
+  </include>
+  <joint name='link_MainBody_JOINT_depthcamera_front' type='fixed'>
+    <parent>link_MainBody</parent>
+    <child>depthcamera::link</child>
+  </joint> -->
+
   <include>
     <uri>model://intel_D435</uri>
     <name>realsense</name>
-    <pose>0.344000 0.0 1.014100 0.0 0.0 0.0</pose>
+    <pose>0.344 0 1.0141 0 0 0</pose>
   </include>
   <joint name='link_MainBody_JOINT_realsense_front' type='fixed'>
     <parent>link_MainBody</parent>
@@ -245,7 +255,7 @@
   <include>
     <uri>model://robot_IMU</uri>
     <name>IMU</name>
-    <pose>0.0 0.0 0.19 0.0 0.0 0.0</pose>
+    <pose>0 0 0.19 0 0 0</pose>
   </include>
   <joint name='link_MainBody_JOINT_IMU' type='fixed'>
     <parent>link_MainBody</parent>
@@ -255,7 +265,7 @@
   <include>
     <uri>model://hokuyo_UAM05LPT301_gpu</uri>
     <name>lidar</name>
-    <pose>0.270000 0.0 0.1125 0.0 0.0 0.0</pose>
+    <pose>0.270000 0 0.1125 0 0 0</pose>
   </include>
   <joint name='link_MainBody_JOINT_lidar' type='fixed'>
     <parent>link_MainBody</parent>
@@ -265,7 +275,7 @@
   <!-- <include>
     <uri>model://robot_USS</uri>
     <name>USS_left1</name>
-    <pose>-0.0315 0.265 0.3505 1.570796329 0 0.1</pose>
+    <pose>-0.0315 0.265 0.3505 1.570796327 0 0.1</pose>
   </include>
   <joint name='Joint_USS_left1' type='fixed'>
     <parent>link_MainBody</parent>
@@ -275,7 +285,7 @@
   <include>
     <uri>model://robot_USS</uri>
     <name>USS_right1</name>
-    <pose>-0.0315 -0.265 0.3505 -1.570796329 0 0.1</pose>
+    <pose>-0.0315 -0.265 0.3505 -1.570796327 0 0.1</pose>
   </include>
   <joint name='Joint_USS_right1' type='fixed'>
     <parent>link_MainBody</parent>
@@ -285,7 +295,7 @@
   <include>
     <uri>model://robot_GPS</uri>
     <name>gps</name>
-    <pose>0.0 0.0 0.21 0.0 0.0 0.0</pose>
+    <pose>0 0 0.21 0 0 0</pose>
   </include>
   <joint name='Joint_GPS' type='fixed'>
     <parent>link_MainBody</parent>
@@ -295,7 +305,7 @@
   <!--include>
   <uri>model://hokuyo_UAM05LPT301_gpu</uri>
   <name>rear_lidar</name>
-  <pose>-0.270 0.0 0.1125 0.0 0.0 3.14</pose>
+  <pose>-0.270 0 0.1125 0 0 3.14</pose>
   </include>
   <joint name='link_MainBody_JOINT_rear_lidar' type='fixed'>
     <parent>link_MainBody</parent>

@@ -73,7 +73,7 @@
   <include>
     <uri>model://CLOi_porter_wheel</uri>
     <name>LeftWheel</name>
-    <pose>0.001 0.225 0.09 -1.570796327 0 0</pose>
+    <pose>0.001 0.225 0.09 -1.5707962 0 0</pose>
   </include>
   <include>
     <uri>model://robot_wheel_suspension</uri>
@@ -112,7 +112,7 @@
   <include>
     <uri>model://CLOi_porter_wheel</uri>
     <name>RightWheel</name>
-    <pose>0.001 -0.225 0.09 1.570796327 0 0</pose>
+    <pose>0.001 -0.225 0.09 1.5707962 0 0</pose>
   </include>
   <include>
     <uri>model://robot_wheel_suspension</uri>
@@ -215,7 +215,7 @@
   <!-- <include>
     <uri>model://CLOi_porter_multicam</uri>
     <name>multi_camera</name>
-    <pose>-0.0485 0 0.9483 0 -1.570796327 0</pose>
+    <pose>-0.0485 0 0.9483 0 -1.5707962 0</pose>
   </include>
   <joint name='link_MainBody_JOINT_multicam' type='fixed'>
     <parent>link_MainBody</parent>
@@ -275,7 +275,7 @@
   <!-- <include>
     <uri>model://robot_USS</uri>
     <name>USS_left1</name>
-    <pose>-0.0315 0.265 0.3505 1.570796327 0 0.1</pose>
+    <pose>-0.0315 0.265 0.3505 1.5707962 0 0.1</pose>
   </include>
   <joint name='Joint_USS_left1' type='fixed'>
     <parent>link_MainBody</parent>
@@ -285,7 +285,7 @@
   <include>
     <uri>model://robot_USS</uri>
     <name>USS_right1</name>
-    <pose>-0.0315 -0.265 0.3505 -1.570796327 0 0.1</pose>
+    <pose>-0.0315 -0.265 0.3505 -1.5707962 0 0.1</pose>
   </include>
   <joint name='Joint_USS_right1' type='fixed'>
     <parent>link_MainBody</parent>

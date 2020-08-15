@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<sdf version='1.6'>
+<model name='depth_camera'>
+  <static>0</static>
+  <allow_auto_disable>1</allow_auto_disable>
+
+  <link name='link'>
+    <self_collide>0</self_collide>
+    <enable_wind>0</enable_wind>
+    <kinematic>0</kinematic>
+
+    <inertial>
+      <mass>0.8</mass>
+      <inertia>
+        <ixx>0.00133333</ixx>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyy>0.00133333</iyy>
+        <iyz>0</iyz>
+        <izz>0.00133333</izz>
+      </inertia>
+    </inertial>
+
+    <collision name='collision_camera'>
+      <geometry>
+        <box>
+          <size>0.030000 0.100000 0.025000</size>
+        </box>
+      </geometry>
+      <max_contacts>1</max_contacts>
+    </collision>
+
+    <visual name='visual_camera'>
+      <geometry>
+        <box>
+          <size>0.030000 0.100000 0.025000</size>
+        </box>
+      </geometry>
+    </visual>
+
+    <sensor name='depth_camera' type='depth'>
+      <camera>
+        <save enabled="False">
+          <path>/home/yg/Pictures/cam</path>
+        </save>
+        <horizontal_fov>0.98</horizontal_fov>
+        <image>
+          <width>320</width>
+          <height>240</height>
+        </image>
+        <clip>
+          <near>0.02</near>
+          <far>2.1</far>
+        </clip>
+      </camera>
+
+      <always_on>1</always_on>
+      <update_rate>10</update_rate>
+      <visualize>1</visualize>
+
+      <plugin name='DepthCameraPlugin' filename='libCameraPlugin.so' />
+    </sensor>
+  </link>
+</model>
+</sdf>

@@ -312,7 +312,7 @@
     <child>rear_lidar::UAM05LPT301_link</child>
   </joint-->
 
-  <plugin name='RobotControl' filename='libRobotControl.so'>
+  <plugin name='RobotControl' filename='libMicomPlugin.so'>
     <PID>
       <kp>3.0</kp>
       <ki>0.2</ki>

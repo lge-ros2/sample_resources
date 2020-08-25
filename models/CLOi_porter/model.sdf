@@ -72,7 +72,7 @@
 
   <include>
     <uri>model://CLOi_porter_wheel</uri>
-    <name>LeftWheel</name>
+    <name>wheel_left</name>
     <pose>0.001 0.225 0.09 -1.5707962 0 0</pose>
   </include>
   <include>
@@ -101,9 +101,9 @@
       </ode>
     </physics>
   </joint>
-  <joint name='link_MainBody_LeftWheel' type='revolute'>
+  <joint name='link_MainBody_wheel_left' type='revolute'>
     <parent>SuspensionLeft::link</parent>
-    <child>LeftWheel::link</child>
+    <child>wheel_left::link</child>
     <axis>
       <xyz>0 0 1</xyz>
     </axis>
@@ -111,7 +111,7 @@
 
   <include>
     <uri>model://CLOi_porter_wheel</uri>
-    <name>RightWheel</name>
+    <name>wheel_right</name>
     <pose>0.001 -0.225 0.09 1.5707962 0 0</pose>
   </include>
   <include>
@@ -140,9 +140,9 @@
       </ode>
     </physics>
   </joint>
-  <joint name='link_MainBody_RightWheel' type='revolute'>
+  <joint name='link_MainBody_wheel_right' type='revolute'>
     <parent>SuspensionRight::link</parent>
-    <child>RightWheel::link</child>
+    <child>wheel_right::link</child>
     <axis>
       <xyz>0 0 -1</xyz>
     </axis>
@@ -254,12 +254,12 @@
 
   <include>
     <uri>model://robot_IMU</uri>
-    <name>IMU</name>
+    <name>imu</name>
     <pose>0 0 0.19 0 0 0</pose>
   </include>
-  <joint name='link_MainBody_JOINT_IMU' type='fixed'>
+  <joint name='link_MainBody_JOINT_imu' type='fixed'>
     <parent>link_MainBody</parent>
-    <child>IMU::link_imu</child>
+    <child>imu::link_imu</child>
   </joint>
 
   <include>
@@ -331,8 +331,8 @@
     <wheel>
       <base>0.449</base>
       <radius>0.0955</radius>
-      <location type="left">LeftWheel</location>
-      <location type="right">RightWheel</location>
+      <location type="left">wheel_left</location>
+      <location type="right">wheel_right</location>
       <friction>
         <motor>0.06</motor>
         <brake>13.0</brake>

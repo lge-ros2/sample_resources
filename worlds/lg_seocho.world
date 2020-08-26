@@ -3,7 +3,7 @@
 <world name="lg_seocho_world">
   <gui>
     <camera name="user_camera">
-      <pose>-47.37 -29.29 -4.5 0 0.523 1.5707</pose>
+      <pose>-47.37 -29.29 -4.5 0 0.523 0</pose>
     </camera>
   </gui>
 

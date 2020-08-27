@@ -30,6 +30,7 @@
       <material>
         <emissive>0.7 0.7 0.7 0.7</emissive>
       </material>
+      <cast_shadows>0</cast_shadows>
     </visual>
   </link>
   <link name='seocho_25_glass_link'>
@@ -43,6 +44,7 @@
       <material>
         <diffuse>0 0.5 0 0.5</diffuse>
       </material>
+      <cast_shadows>0</cast_shadows>
     </visual>
   </link>
 

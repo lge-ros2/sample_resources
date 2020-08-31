@@ -91,7 +91,18 @@
       <always_on>1</always_on>
       <update_rate>33.33333</update_rate>
       <visualize>false</visualize>
-      <plugin name="LaserPlugin" filename="libLaserPlugin.so" />
+
+      <plugin name="LaserPlugin" filename="libLaserPlugin.so" >
+        <intensity>false</intensity>
+        <filter>
+          <angle>
+            <horizontal>
+              <lower>-1.85005</lower>
+              <upper>1.85005</upper>
+            </horizontal>
+          </angle>
+        </filter>
+      </plugin>
     </sensor>
   </link>
 </model>

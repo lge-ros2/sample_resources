@@ -58,7 +58,13 @@
       <update_rate>10</update_rate>
       <visualize>1</visualize>
 
-      <plugin name='DepthCameraPlugin' filename='libCameraPlugin.so' />
+      <plugin name='DepthCameraPlugin' filename='libCameraPlugin.so'>
+        <is_depthcam_only>true</is_depthcam_only>
+        <ros2>
+          <topic_name>depth</topic_name>
+          <frame_id>depth_link</frame_id>
+        </ros2>
+      </plugin>
     </sensor>
   </link>
 </model>

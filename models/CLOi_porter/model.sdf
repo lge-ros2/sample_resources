@@ -212,7 +212,7 @@
     </axis>
   </joint>
 
-  <!-- <include>
+  <include>
     <uri>model://CLOi_porter_multicam</uri>
     <name>multi_camera</name>
     <pose>-0.0485 0 0.9483 0 -1.5707962 0</pose>
@@ -220,9 +220,9 @@
   <joint name='link_MainBody_JOINT_multicam' type='fixed'>
     <parent>link_MainBody</parent>
     <child>multi_camera::link_multicam</child>
-  </joint> -->
+  </joint>
 
-  <!-- <include>
+  <include>
     <uri>model://robot_camera</uri>
     <name>camera</name>
     <pose>0.344 0 1.0141 0 0 0</pose>
@@ -230,9 +230,9 @@
   <joint name='link_MainBody_JOINT_camera_front' type='fixed'>
     <parent>link_MainBody</parent>
     <child>camera::link</child>
-  </joint> -->
+  </joint>
 
-  <!-- <include>
+  <include>
     <uri>model://robot_depthcam</uri>
     <name>depthcamera</name>
     <pose>0.344 0 1.0141 0 0 0</pose>
@@ -240,7 +240,7 @@
   <joint name='link_MainBody_JOINT_depthcamera_front' type='fixed'>
     <parent>link_MainBody</parent>
     <child>depthcamera::link</child>
-  </joint> -->
+  </joint>
 
   <include>
     <uri>model://intel_D435</uri>
@@ -339,6 +339,15 @@
       </friction>
     </wheel>
     <update_rate>20</update_rate>
+    <ros2>
+      <transform_name>
+        <imu>imu</imu>
+        <wheels>
+          <left>wheel_left</left>
+          <right>wheel_right</right>
+        </wheels>
+      </transform_name>
+    </ros2>
   </plugin>
 </model>
 </sdf>

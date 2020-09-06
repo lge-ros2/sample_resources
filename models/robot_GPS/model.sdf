@@ -93,7 +93,12 @@
           </vertical>
         </velocity_sensing>
       </gps>
-      <plugin name='GpsPlugin' filename='libGpsPlugin.so'/>
+      <plugin name='GpsPlugin' filename='libGpsPlugin.so'>
+        <ros2>
+          <topic_name>navsatfix</topic_name>
+          <frame_id>gps</frame_id>
+        </ros2>
+      </plugin>
     </sensor>
   </link>
 </model>

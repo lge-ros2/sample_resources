@@ -93,6 +93,10 @@
       <visualize>false</visualize>
 
       <plugin name="LaserPlugin" filename="libLaserPlugin.so" >
+        <ros2>
+          <topic_name>scan</topic_name>
+          <frame_id>base_scan</frame_id>
+        </ros2>
         <intensity>false</intensity>
         <filter>
           <angle>

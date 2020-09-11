@@ -66,7 +66,7 @@
       <visualize>0</visualize>
       <plugin name='CameraPlugin' filename='libCameraPlugin.so'>
         <ros2>
-          <topic_name>rgb</topic_name>
+          <topic_name>color</topic_name>
           <frame_id>camera_link</frame_id>
         </ros2>
       </plugin>

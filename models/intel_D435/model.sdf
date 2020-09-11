@@ -44,7 +44,7 @@
         </geometry>
       </collision>
 
-      <sensor name='rgb' type='camera'>
+      <sensor name='color' type='camera'>
         <pose>0 0.032 0.0 0 0 0</pose>
         <camera name="__default__">
           <horizontal_fov>1.047</horizontal_fov>
@@ -124,7 +124,7 @@
     </link>
     <plugin name="D435Plugin" filename="libRealSensePlugin.so">
       <activate>
-        <module name='rgb'>rgb</module>
+        <module name='color'>color</module>
         <module name='left_imager'>ir1</module>
         <module name='right_imager'>ir2</module>
         <module name='depth'>depth</module>

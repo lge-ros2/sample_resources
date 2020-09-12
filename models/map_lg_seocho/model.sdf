@@ -50,6 +50,7 @@
   </include>
 
   <plugin name="ElevatorSystem" filename="libElevatorSystem.so">
+    <system_name>ElevatorSystem_00</system_name>
     <elevator prefix_name="Elevator_" speed="30">
       <floor>floor_collision</floor>
       <doors speed="0.6" closing_timer="7.0">

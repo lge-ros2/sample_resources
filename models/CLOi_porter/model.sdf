@@ -90,8 +90,8 @@
         <lower>0.0</lower>
       </limit>
       <dynamics>
-        <damping>400</damping>
-        <spring_stiffness>2000</spring_stiffness>
+        <damping>500</damping>
+        <spring_stiffness>3500</spring_stiffness>
       </dynamics>
     </axis>
     <physics>
@@ -129,8 +129,8 @@
         <lower>0.0</lower>
       </limit>
       <dynamics>
-        <damping>400</damping>
-        <spring_stiffness>2000</spring_stiffness>
+        <damping>500</damping>
+        <spring_stiffness>3500</spring_stiffness>
       </dynamics>
     </axis>
     <physics>

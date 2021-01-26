@@ -67,7 +67,7 @@
       <plugin name='CameraPlugin' filename='libCameraPlugin.so'>
         <ros2>
           <topic_name>color</topic_name>
-          <frame_id>camera_link</frame_id>
+          <frame_id>camera</frame_id>
         </ros2>
       </plugin>
     </sensor>

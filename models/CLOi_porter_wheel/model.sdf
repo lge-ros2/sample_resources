@@ -49,8 +49,8 @@
       <surface>
         <friction>
           <ode>
-            <mu>0.98</mu>
-            <mu2>0.96</mu2>
+            <mu>0.88</mu>
+            <mu2>0.85</mu2>
             <fdir1>0 0 1</fdir1>
             <slip1>0.0</slip1>
             <slip2>0.0</slip2>

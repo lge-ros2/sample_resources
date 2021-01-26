@@ -71,14 +71,14 @@
   </link>
 
   <include>
-    <uri>model://CLOi_porter_wheel</uri>
-    <name>wheel_left</name>
-    <pose>0.001 0.225 0.09 -1.5707962 0 0</pose>
-  </include>
-  <include>
     <uri>model://robot_wheel_suspension</uri>
     <name>SuspensionLeft</name>
-    <pose>0 0.158 0.105 0 0 0</pose>
+    <pose>0 0.158 0.085 0 0 0</pose>
+  </include>
+  <include>
+    <uri>model://CLOi_porter_wheel</uri>
+    <name>wheel_left</name>
+    <pose>0.001 0.225 0.08 -1.5707962 0 0</pose>
   </include>
   <joint name="Joint_link_MainBody_SuspLeft" type="prismatic">
     <parent>link_MainBody</parent>
@@ -86,12 +86,12 @@
     <axis>
       <xyz>0 0 1</xyz>
       <limit>
-        <upper>0.1</upper>
+        <upper>0.08</upper>
         <lower>0.0</lower>
       </limit>
       <dynamics>
-        <damping>1200</damping>
-        <spring_stiffness>9000</spring_stiffness>
+        <damping>650</damping>
+        <spring_stiffness>2600</spring_stiffness>
       </dynamics>
     </axis>
     <physics>
@@ -110,14 +110,14 @@
   </joint>
 
   <include>
-    <uri>model://CLOi_porter_wheel</uri>
-    <name>wheel_right</name>
-    <pose>0.001 -0.225 0.09 1.5707962 0 0</pose>
-  </include>
-  <include>
     <uri>model://robot_wheel_suspension</uri>
     <name>SuspensionRight</name>
-    <pose>0 -0.158 0.105 0 0 0</pose>
+    <pose>0 -0.158 0.085 0 0 0</pose>
+  </include>
+  <include>
+    <uri>model://CLOi_porter_wheel</uri>
+    <name>wheel_right</name>
+    <pose>0.001 -0.225 0.08 1.5707962 0 0</pose>
   </include>
   <joint name="Joint_link_MainBody_SuspRight" type="prismatic">
     <parent>link_MainBody</parent>
@@ -125,12 +125,12 @@
     <axis>
       <xyz>0 0 1</xyz>
       <limit>
-        <upper>0.1</upper>
+        <upper>0.08</upper>
         <lower>0.0</lower>
       </limit>
       <dynamics>
-        <damping>1200</damping>
-        <spring_stiffness>9000</spring_stiffness>
+        <damping>650</damping>
+        <spring_stiffness>2600</spring_stiffness>
       </dynamics>
     </axis>
     <physics>
@@ -212,7 +212,7 @@
     </axis>
   </joint>
 
-  <include>
+  <!-- <include>
     <uri>model://CLOi_porter_multicam</uri>
     <name>multi_camera</name>
     <pose>-0.0485 0 0.9483 0 -1.5707962 0</pose>
@@ -220,7 +220,7 @@
   <joint name='link_MainBody_JOINT_multicam' type='fixed'>
     <parent>link_MainBody</parent>
     <child>multi_camera::link_multicam</child>
-  </joint>
+  </joint> -->
 
   <include>
     <uri>model://robot_camera</uri>
@@ -232,7 +232,7 @@
     <child>camera::link</child>
   </joint>
 
-  <include>
+  <!-- <include>
     <uri>model://robot_depthcam</uri>
     <name>depthcamera</name>
     <pose>0.344 0 1.0141 0 0 0</pose>
@@ -250,7 +250,7 @@
   <joint name='link_MainBody_JOINT_realsense_front' type='fixed'>
     <parent>link_MainBody</parent>
     <child>realsense::link</child>
-  </joint>
+  </joint> -->
 
   <include>
     <uri>model://robot_IMU</uri>
@@ -314,8 +314,8 @@
 
   <plugin name='RobotControl' filename='libMicomPlugin.so'>
     <PID>
-      <kp>3.0</kp>
-      <ki>0.2</ki>
+      <kp>8.0</kp>
+      <ki>0.5</ki>
       <kd>0.0</kd>
     </PID>
     <uss>

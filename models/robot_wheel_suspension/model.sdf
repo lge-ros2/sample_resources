@@ -13,14 +13,14 @@
         <izz>0</izz>
       </inertia>
     </inertial>
-    <!-- <collision name="collision">
+    <collision name="collision">
       <geometry>
         <cylinder>
           <radius>0.011</radius>
           <length>0.10</length>
         </cylinder>
       </geometry>
-    </collision> -->
+    </collision>
     <visual name="visual">
       <geometry>
         <cylinder>

@@ -86,12 +86,12 @@
     <axis>
       <xyz>0 0 1</xyz>
       <limit>
-        <upper>0.08</upper>
+        <upper>0.06</upper>
         <lower>0.0</lower>
       </limit>
       <dynamics>
-        <damping>500</damping>
-        <spring_stiffness>3500</spring_stiffness>
+        <damping>1000</damping>
+        <spring_stiffness>14000</spring_stiffness>
       </dynamics>
     </axis>
     <physics>
@@ -125,12 +125,12 @@
     <axis>
       <xyz>0 0 1</xyz>
       <limit>
-        <upper>0.08</upper>
+        <upper>0.06</upper>
         <lower>0.0</lower>
       </limit>
       <dynamics>
-        <damping>500</damping>
-        <spring_stiffness>3500</spring_stiffness>
+        <damping>1000</damping>
+        <spring_stiffness>14000</spring_stiffness>
       </dynamics>
     </axis>
     <physics>
@@ -159,7 +159,7 @@
     <axis>
       <xyz>0 0 1</xyz>
       <dynamics>
-        <friction>0.05</friction>
+        <friction>0.01</friction>
       </dynamics>
     </axis>
   </joint>
@@ -175,7 +175,7 @@
     <axis>
       <xyz>0 0 1</xyz>
       <dynamics>
-        <friction>0.05</friction>
+        <friction>0.01</friction>
       </dynamics>
     </axis>
   </joint>
@@ -191,7 +191,7 @@
     <axis>
       <xyz>0 0 1</xyz>
       <dynamics>
-        <friction>0.05</friction>
+        <friction>0.01</friction>
       </dynamics>
     </axis>
   </joint>
@@ -207,7 +207,7 @@
     <axis>
       <xyz>0 0 1</xyz>
       <dynamics>
-        <friction>0.05</friction>
+        <friction>0.01</friction>
       </dynamics>
     </axis>
   </joint>
@@ -314,7 +314,7 @@
 
   <plugin name='RobotControl' filename='libMicomPlugin.so'>
     <PID>
-      <kp>8.0</kp>
+      <kp>5.0</kp>
       <ki>0.5</ki>
       <kd>0.0</kd>
     </PID>

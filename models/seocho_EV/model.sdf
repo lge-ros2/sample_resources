@@ -4,9 +4,6 @@
   <allow_auto_disable>1</allow_auto_disable>
   <link name='floor'>
     <kinematic>1</kinematic>
-    <inertial>
-      <mass>500</mass>
-    </inertial>
     <gravity>0</gravity>
 
     <collision name='floor_collision'>

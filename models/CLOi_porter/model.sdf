@@ -106,6 +106,9 @@
     <child>wheel_left::link</child>
     <axis>
       <xyz>0 0 1</xyz>
+      <dynamics>
+        <friction>0.01</friction>
+      </dynamics>
     </axis>
   </joint>
 
@@ -145,6 +148,9 @@
     <child>wheel_right::link</child>
     <axis>
       <xyz>0 0 -1</xyz>
+      <dynamics>
+        <friction>0.01</friction>
+      </dynamics>
     </axis>
   </joint>
 
@@ -159,7 +165,7 @@
     <axis>
       <xyz>0 0 1</xyz>
       <dynamics>
-        <friction>0.01</friction>
+        <friction>0.001</friction>
       </dynamics>
     </axis>
   </joint>
@@ -175,7 +181,7 @@
     <axis>
       <xyz>0 0 1</xyz>
       <dynamics>
-        <friction>0.01</friction>
+        <friction>0.001</friction>
       </dynamics>
     </axis>
   </joint>
@@ -191,7 +197,7 @@
     <axis>
       <xyz>0 0 1</xyz>
       <dynamics>
-        <friction>0.01</friction>
+        <friction>0.001</friction>
       </dynamics>
     </axis>
   </joint>
@@ -207,7 +213,7 @@
     <axis>
       <xyz>0 0 1</xyz>
       <dynamics>
-        <friction>0.01</friction>
+        <friction>0.001</friction>
       </dynamics>
     </axis>
   </joint>

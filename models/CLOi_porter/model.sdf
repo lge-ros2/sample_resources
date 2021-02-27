@@ -73,12 +73,12 @@
   <include>
     <uri>model://robot_wheel_suspension</uri>
     <name>SuspensionLeft</name>
-    <pose>0 0.158 0.085 0 0 0</pose>
+    <pose>0 0.158 0.08 0 0 0</pose>
   </include>
   <include>
     <uri>model://CLOi_porter_wheel</uri>
     <name>wheel_left</name>
-    <pose>0.001 0.225 0.08 -1.5707962 0 0</pose>
+    <pose>0.001 0.225 0.07 -1.5707962 0 0</pose>
   </include>
   <joint name="Joint_link_MainBody_SuspLeft" type="prismatic">
     <parent>link_MainBody</parent>
@@ -86,12 +86,13 @@
     <axis>
       <xyz>0 0 1</xyz>
       <limit>
-        <upper>0.06</upper>
+        <upper>0.04</upper>
         <lower>0.0</lower>
       </limit>
       <dynamics>
-        <damping>1000</damping>
-        <spring_stiffness>14000</spring_stiffness>
+        <friction>0.5</friction>
+        <damping>2000</damping>
+        <spring_stiffness>9000</spring_stiffness>
       </dynamics>
     </axis>
     <physics>
@@ -115,12 +116,12 @@
   <include>
     <uri>model://robot_wheel_suspension</uri>
     <name>SuspensionRight</name>
-    <pose>0 -0.158 0.085 0 0 0</pose>
+    <pose>0 -0.158 0.08 0 0 0</pose>
   </include>
   <include>
     <uri>model://CLOi_porter_wheel</uri>
     <name>wheel_right</name>
-    <pose>0.001 -0.225 0.08 1.5707962 0 0</pose>
+    <pose>0.001 -0.225 0.07 1.5707962 0 0</pose>
   </include>
   <joint name="Joint_link_MainBody_SuspRight" type="prismatic">
     <parent>link_MainBody</parent>
@@ -128,12 +129,13 @@
     <axis>
       <xyz>0 0 1</xyz>
       <limit>
-        <upper>0.06</upper>
-        <lower>0.0</lower>
+        <upper>0.04</upper>
+        <lower>0.00</lower>
       </limit>
       <dynamics>
-        <damping>1000</damping>
-        <spring_stiffness>14000</spring_stiffness>
+        <friction>0.5</friction>
+        <damping>2000</damping>
+        <spring_stiffness>9000</spring_stiffness>
       </dynamics>
     </axis>
     <physics>
@@ -165,7 +167,7 @@
     <axis>
       <xyz>0 0 1</xyz>
       <dynamics>
-        <friction>0.001</friction>
+        <friction>0.3</friction>
       </dynamics>
     </axis>
   </joint>
@@ -181,7 +183,7 @@
     <axis>
       <xyz>0 0 1</xyz>
       <dynamics>
-        <friction>0.001</friction>
+        <friction>0.3</friction>
       </dynamics>
     </axis>
   </joint>
@@ -197,7 +199,7 @@
     <axis>
       <xyz>0 0 1</xyz>
       <dynamics>
-        <friction>0.001</friction>
+        <friction>0.3</friction>
       </dynamics>
     </axis>
   </joint>
@@ -213,7 +215,7 @@
     <axis>
       <xyz>0 0 1</xyz>
       <dynamics>
-        <friction>0.001</friction>
+        <friction>0.3</friction>
       </dynamics>
     </axis>
   </joint>

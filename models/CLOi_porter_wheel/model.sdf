@@ -57,7 +57,7 @@
           </ode>
         </friction>
         <bounce>
-          <restitution_coefficient>0.000000</restitution_coefficient>
+          <restitution_coefficient>0.3</restitution_coefficient>
           <threshold>100000.000000</threshold>
         </bounce>
         <contact>

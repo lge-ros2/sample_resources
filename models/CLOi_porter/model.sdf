@@ -5,12 +5,12 @@
     <inertial>
       <mass>60</mass>
       <inertia>
-        <ixx>9.08066667</ixx>
+        <ixx>11.12720579</ixx>
         <ixy>0</ixy>
         <ixz>0</ixz>
-        <iyy>9.08066667</iyy>
+        <iyy>11.12720579</iyy>
         <iyz>0</iyz>
-        <izz>8.476</izz>
+        <izz>4.97425747</izz>
       </inertia>
       <pose>0 0 0.25 0 -0 0</pose>
     </inertial>
@@ -73,12 +73,12 @@
   <include>
     <uri>model://robot_wheel_suspension</uri>
     <name>SuspensionLeft</name>
-    <pose>0 0.158 0.08 0 0 0</pose>
+    <pose>0 0.158 0.09 0 0 0</pose>
   </include>
   <include>
     <uri>model://CLOi_porter_wheel</uri>
     <name>wheel_left</name>
-    <pose>0.001 0.225 0.07 -1.5707962 0 0</pose>
+    <pose>0.001 0.225 0.08 -1.5707962 0 0</pose>
   </include>
   <joint name="Joint_link_MainBody_SuspLeft" type="prismatic">
     <parent>link_MainBody</parent>
@@ -91,16 +91,10 @@
       </limit>
       <dynamics>
         <friction>0.5</friction>
-        <damping>2000</damping>
+        <damping>1000</damping>
         <spring_stiffness>9000</spring_stiffness>
       </dynamics>
     </axis>
-    <physics>
-      <ode>
-        <implicit_spring_damper>1</implicit_spring_damper>
-        <erp>0.45</erp>
-      </ode>
-    </physics>
   </joint>
   <joint name='link_MainBody_wheel_left' type='revolute'>
     <parent>SuspensionLeft::link</parent>
@@ -116,12 +110,12 @@
   <include>
     <uri>model://robot_wheel_suspension</uri>
     <name>SuspensionRight</name>
-    <pose>0 -0.158 0.08 0 0 0</pose>
+    <pose>0 -0.158 0.09 0 0 0</pose>
   </include>
   <include>
     <uri>model://CLOi_porter_wheel</uri>
     <name>wheel_right</name>
-    <pose>0.001 -0.225 0.07 1.5707962 0 0</pose>
+    <pose>0.001 -0.225 0.08 1.5707962 0 0</pose>
   </include>
   <joint name="Joint_link_MainBody_SuspRight" type="prismatic">
     <parent>link_MainBody</parent>
@@ -134,16 +128,10 @@
       </limit>
       <dynamics>
         <friction>0.5</friction>
-        <damping>2000</damping>
+        <damping>1000</damping>
         <spring_stiffness>9000</spring_stiffness>
       </dynamics>
     </axis>
-    <physics>
-      <ode>
-        <implicit_spring_damper>1</implicit_spring_damper>
-        <erp>0.45</erp>
-      </ode>
-    </physics>
   </joint>
   <joint name='link_MainBody_wheel_right' type='revolute'>
     <parent>SuspensionRight::link</parent>
@@ -322,8 +310,8 @@
 
   <plugin name='RobotControl' filename='libMicomPlugin.so'>
     <PID>
-      <kp>5.0</kp>
-      <ki>0.5</ki>
+      <kp>1.0</kp>
+      <ki>0.05</ki>
       <kd>0.0</kd>
     </PID>
     <uss>

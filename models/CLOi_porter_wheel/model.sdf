@@ -6,12 +6,12 @@
     <inertial>
       <mass>0.6</mass>
       <inertia>
-        <ixx>0.00270833</ixx>
+        <ixx>0.00162500</ixx>
         <ixy>0</ixy>
         <ixz>0</ixz>
-        <iyy>0.00270833</iyy>
+        <iyy>0.00162500</iyy>
         <iyz>0</iyz>
-        <izz>0.00500000</izz>
+        <izz>0.00300000</izz>
       </inertia>
     </inertial>
 
@@ -57,15 +57,15 @@
           </ode>
         </friction>
         <bounce>
-          <restitution_coefficient>0.3</restitution_coefficient>
+          <restitution_coefficient>0.00</restitution_coefficient>
           <threshold>100000.000000</threshold>
         </bounce>
         <contact>
           <poissons_ratio>0.49</poissons_ratio>
           <elastic_modulus>0.46</elastic_modulus>
           <ode>
-            <max_vel>0.0</max_vel>
-            <min_depth>0.0005</min_depth>
+            <max_vel>0.01</max_vel>
+            <min_depth>0.0001</min_depth>
             <kp>3e6</kp>
             <kd>1.00000</kd>
             <soft_cfm>0.000010</soft_cfm>

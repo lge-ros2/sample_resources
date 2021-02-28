@@ -6,12 +6,12 @@
     <inertial>
       <mass>0.8</mass>
       <inertia>
-        <ixx>0</ixx>
+        <ixx>0.00043333</ixx>
         <ixy>0</ixy>
         <ixz>0</ixz>
-        <iyy>0</iyy>
+        <iyy>0.00043333</iyy>
         <iyz>0</iyz>
-        <izz>0</izz>
+        <izz>0.00065333</izz>
       </inertia>
     </inertial>
     <self_collide>0</self_collide>

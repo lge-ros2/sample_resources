@@ -3,16 +3,19 @@
 <model name='RobotWheelSuspension'>
   <link name="link">
     <inertial>
-      <mass>2</mass>
+      <mass>0.5</mass>
       <inertia>
-        <ixx>0</ixx>
+        <ixx>0.00043179</ixx>
         <ixy>0</ixy>
         <ixz>0</ixz>
-        <iyy>0</iyy>
+        <iyy>0.00043179</iyy>
         <iyz>0</iyz>
-        <izz>0</izz>
+        <izz>0.00003025</izz>
       </inertia>
     </inertial>
+
+    <gravity>1</gravity>
+
     <collision name="collision">
       <geometry>
         <cylinder>

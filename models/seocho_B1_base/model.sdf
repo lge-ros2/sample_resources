@@ -19,6 +19,17 @@
             <uri>model://seocho_B1_base/meshes/B1_bottom_col.obj</uri>
           </mesh>
         </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1</mu>
+              <mu2>1</mu2>
+              <fdir1>0 0 1</fdir1>
+              <slip1>0.0</slip1>
+              <slip2>0.0</slip2>
+            </ode>
+          </friction>
+        </surface>
       </collision>
     <visual name='visual'>
       <geometry>

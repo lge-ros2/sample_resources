@@ -9,14 +9,14 @@
     <kinematic>0</kinematic>
 
     <inertial>
-      <mass>0.8</mass>
+      <mass>0.072</mass>
       <inertia>
-        <ixx>0.00133333</ixx>
+        <ixx>0.00006375</ixx>
         <ixy>0</ixy>
         <ixz>0</ixz>
-        <iyy>0.00133333</iyy>
+        <iyy>0.00000915</iyy>
         <iyz>0</iyz>
-        <izz>0.00133333</izz>
+        <izz>0.00006540</izz>
       </inertia>
     </inertial>
     <collision name='collision_camera'>

@@ -1,16 +1,17 @@
 <?xml version="1.0"?>
 <sdf version='1.6'>
 <model name='RobotWheelSuspension'>
+  <!--<allow_auto_disable>1</allow_auto_disable>-->
   <link name="link">
     <inertial>
-      <mass>0.5</mass>
+      <mass>2.0</mass>
       <inertia>
-        <ixx>0.00043179</ixx>
+        <ixx>0.00172717</ixx>
         <ixy>0</ixy>
         <ixz>0</ixz>
-        <iyy>0.00043179</iyy>
+        <iyy>0.00172717</iyy>
         <iyz>0</iyz>
-        <izz>0.00003025</izz>
+        <izz>0.00012100</izz>
       </inertia>
     </inertial>
 

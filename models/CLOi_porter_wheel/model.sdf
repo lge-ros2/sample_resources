@@ -4,15 +4,15 @@
   <!--<allow_auto_disable>1</allow_auto_disable>-->
   <link name='link'>
     <inertial>
-      <mass>0.6</mass>
+      <mass>0.8</mass>
       <inertia>
-        <ixx>0.00162500</ixx>
+        <ixx>0.00216667</ixx>
         <ixy>0</ixy>
         <ixz>0</ixz>
-        <iyy>0.00162500</iyy>
+        <iyy>0.00216667</iyy>
         <iyz>0</iyz>
-        <izz>0.00300000</izz>
-      </inertia>
+        <izz>0.00400000</izz>
+      </inertia> 
     </inertial>
 
     <gravity>1</gravity>

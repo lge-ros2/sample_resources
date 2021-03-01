@@ -3,6 +3,7 @@
 <model name='camera'>
   <static>0</static>
   <allow_auto_disable>1</allow_auto_disable>
+
   <link name='link'>
     <self_collide>0</self_collide>
     <enable_wind>0</enable_wind>
@@ -11,14 +12,15 @@
     <inertial>
       <mass>0.072</mass>
       <inertia>
-        <ixx>0.00006375</ixx>
+        <ixx>0.000007</ixx>
         <ixy>0</ixy>
         <ixz>0</ixz>
-        <iyy>0.00000915</iyy>
+        <iyy>0.000007</iyy>
         <iyz>0</iyz>
-        <izz>0.00006540</izz>
+        <izz>0.000007</izz>
       </inertia>
     </inertial>
+
     <collision name='collision_camera'>
       <geometry>
         <box>
@@ -27,6 +29,7 @@
       </geometry>
       <max_contacts>1</max_contacts>
     </collision>
+
     <visual name='visual_camera'>
       <geometry>
         <box>

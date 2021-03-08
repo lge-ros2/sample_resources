@@ -91,8 +91,8 @@
       </limit>
       <dynamics>
         <friction>0.5</friction>
-        <damping>1200</damping>
-        <spring_stiffness>14000</spring_stiffness>
+        <damping>1000</damping>
+        <spring_stiffness>10000</spring_stiffness>
       </dynamics>
     </axis>
   </joint>
@@ -128,8 +128,8 @@
       </limit>
       <dynamics>
         <friction>0.5</friction>
-        <damping>1200</damping>
-        <spring_stiffness>14000</spring_stiffness>
+        <damping>1000</damping>
+        <spring_stiffness>10000</spring_stiffness>
       </dynamics>
     </axis>
   </joint>

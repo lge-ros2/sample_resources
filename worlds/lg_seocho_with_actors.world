@@ -7,15 +7,15 @@
     </camera>
   </gui>
 
-  <include>
+  <!-- <include>
     <uri>model://map_lg_seocho</uri>
-  </include>
+  </include> -->
 
-  <include>
+  <!-- <include>
     <name>cloi1</name>
     <uri>model://CLOi_porter</uri>
     <pose>-43.81 -28.77 -6.546 0 0 3.14</pose>
-  </include>
+  </include> -->
 
   <!-- <include>
     <name>cloi2</name>
@@ -30,7 +30,7 @@
   </include> -->
 
   <actor name="actor1">
-    <pose>98.5 93.52 1.04109 0 0 0</pose>
+    <pose>0 0 0 0 0 0</pose>
     <skin>
       <filename>file://models/walk.dae</filename>
       <scale>1.0</scale>
@@ -40,7 +40,7 @@
       <scale>1.0</scale>
       <interpolate_x>true</interpolate_x>
     </animation>
-    <plugin name="actor1_plugin" filename="libActorsPlugin.so">
+    <!-- <plugin name="actor1_plugin" filename="libActorsPlugin.so">
       <target>98.9 107.9 1.04109</target>
       <target_weight>1.1</target_weight>
       <obstacle_weight>1.5</obstacle_weight>
@@ -48,7 +48,7 @@
       <ignore_obstacles>
         <model>ground_plane</model>
       </ignore_obstacles>
-    </plugin>
+    </plugin> -->
   </actor>
 
   <!-- <actor name="actor2">

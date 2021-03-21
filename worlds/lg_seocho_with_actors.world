@@ -17,7 +17,7 @@
     <pose>-43.81 -28.77 -6.546 0 0 3.14</pose>
   </include>
 
-  <!-- <include>
+  <include>
     <name>cloi2</name>
     <uri>model://CLOi_porter</uri>
     <pose>-39.81 -38.77 -6.546 0 0 3.14</pose>
@@ -27,20 +27,20 @@
     <name>cloi3</name>
     <uri>model://CLOi_porter</uri>
     <pose>-34.81 -38.77 -6.546 0 0 3.14</pose>
-  </include> -->
+  </include>
 
   <actor name="actor1">
-    <pose>98.5 93.52 1.04109 0 0 0</pose>
+    <pose>-35.92 -28.22 -6.59 0 0 0</pose>
     <skin>
-      <filename>file://models/walk.dae</filename>
+      <filename>file://models/stand.dae</filename>
       <scale>1.0</scale>
     </skin>
-    <animation name="walking">
-      <filename>file://models/walk.dae</filename>
+    <animation name="stand">
+      <filename>file://models/stand.dae</filename>
       <scale>1.0</scale>
       <interpolate_x>true</interpolate_x>
     </animation>
-    <plugin name="actor1_plugin" filename="libActorsPlugin.so">
+    <!-- <plugin name="actor1_plugin" filename="libActorsPlugin.so">
       <target>98.9 107.9 1.04109</target>
       <target_weight>1.1</target_weight>
       <obstacle_weight>1.5</obstacle_weight>
@@ -48,25 +48,25 @@
       <ignore_obstacles>
         <model>ground_plane</model>
       </ignore_obstacles>
-    </plugin>
+    </plugin> -->
   </actor>
 
-  <!-- <actor name="actor2">
+  <actor name="actor2">
+    <pose>-42.28 -20.08 -6.59 0 0 1.5707</pose>
     <skin>
-      <filename>file://models/walk.dae</filename>
+      <filename>file://models/run.dae</filename>
       <scale>1.0</scale>
     </skin>
-    <pose>0 0 0 0 0 0</pose>
-    <animation name="walking">
-      <filename>file://models/walk.dae</filename>
+    <animation name="running">
+      <filename>file://models/run.dae</filename>
       <scale>1.000000</scale>
       <interpolate_x>true</interpolate_x>
     </animation>
     <script>
       <loop>true</loop>
-      <delay_start>0.000000</delay_start>
+      <delay_start>0.0</delay_start>
       <auto_start>true</auto_start>
-      <trajectory id="0" type="walking">
+      <trajectory id="0" type="running">
         <waypoint>
           <time>0.000000</time>
           <pose>0.000000 1.000000 0.000000 0.000000 0.000000 0.000000</pose>
@@ -197,6 +197,6 @@
         </waypoint>
       </trajectory>
     </script>
-  </actor> -->
+  </actor>
 </world>
 </sdf>

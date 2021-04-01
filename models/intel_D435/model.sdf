@@ -108,6 +108,9 @@
           <image>
             <width>640</width>
             <height>480</height>
+            <format>L16</format>
+            <!-- <format>R_FLOAT16</format> -->
+            <!-- <format>R_FLOAT32</format> -->
           </image>
           <clip>
             <near>0.105</near>

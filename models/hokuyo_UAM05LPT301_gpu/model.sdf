@@ -90,7 +90,7 @@
       </ray>
       <always_on>1</always_on>
       <update_rate>33.33333</update_rate>
-      <visualize>false</visualize>
+      <visualize>true</visualize>
 
       <plugin name="LaserPlugin" filename="libLaserPlugin.so" >
         <ros2>
@@ -101,8 +101,8 @@
         <filter>
           <angle>
             <horizontal>
-              <lower>-1.85005</lower>
-              <upper>1.85005</upper>
+              <lower>-1.845000</lower>
+              <upper>1.845000</upper>
             </horizontal>
           </angle>
         </filter>

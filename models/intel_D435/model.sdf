@@ -126,6 +126,9 @@
       </sensor>
     </link>
     <plugin name="D435Plugin" filename="libRealSensePlugin.so">
+      <configuration>
+        <depth_scale>1000</depth_scale>
+      </configuration>
       <activate>
         <module name='color'>color</module>
         <module name='left_imager'>ir1</module>

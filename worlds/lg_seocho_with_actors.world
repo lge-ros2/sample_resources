@@ -71,7 +71,7 @@
   </actor>
 
   <actor name="actor2">
-    <pose>-42.28 -20.08 -6.59 0 0 1.5707</pose>
+    <pose>-42.28 -20.08 -6.59 0 0 0</pose>
     <skin>
       <filename>file://models/run.dae</filename>
       <scale>1.0</scale>

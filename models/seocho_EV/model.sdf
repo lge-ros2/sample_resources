@@ -28,7 +28,7 @@
     </visual>
   </link>
 
-  <model name='Elevator_Doors'>
+  <model name='door'>
     <static>1</static>
     <allow_auto_disable>1</allow_auto_disable>
     <pose>0.00428 -0.44789 -0.00088 0 0 0</pose>

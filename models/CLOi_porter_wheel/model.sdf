@@ -12,7 +12,7 @@
         <iyy>0.00216667</iyy>
         <iyz>0</iyz>
         <izz>0.00400000</izz>
-      </inertia> 
+      </inertia>
     </inertial>
 
     <gravity>1</gravity>
@@ -31,7 +31,7 @@
         <ambient>0.5 0.5 0.5 1</ambient>
         <diffuse>0.1 0.1 0.1 1</diffuse>
         <specular>0.8 0.8 0.8 1</specular>
-        <emissive>0.2 0.2 0.2 1</emissive>
+        <emissive>0.02 0.02 0.02 1</emissive>
       </material>
       <cast_shadows>0</cast_shadows>
       <transparency>0</transparency>

@@ -4,7 +4,7 @@ newmtl light_1_1_1_1_1
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd light_1_1_1_1_1_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -12,7 +12,7 @@ newmtl xbanner_UV
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd xbanner_UV_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -20,7 +20,7 @@ newmtl TV_table_UV
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd TV_table_UV_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -28,7 +28,7 @@ newmtl TV_big_UV_1
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd TV_big_UV_1_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -36,7 +36,7 @@ newmtl TV_UV
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd TV_UV_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -44,7 +44,7 @@ newmtl escalator_UV_2
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd escalator_UV_2_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -52,7 +52,7 @@ newmtl escalator_UV_1
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd escalator_UV_1_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -60,7 +60,7 @@ newmtl rest_light_rest_area_UV
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd rest_light_rest_area_UV_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -68,7 +68,7 @@ newmtl rest_mid_lib_sk_sofaB_1_UV_1
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd rest_mid_lib_sk_sofaB_1_UV_1_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -76,7 +76,7 @@ newmtl rest_chair_Instance_1
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd rest_chair_Instance_1_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -84,7 +84,7 @@ newmtl rest_table_round_UV
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd rest_table_round_UV_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -92,7 +92,7 @@ newmtl GS25_moving_shelf_UV_1
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd GS25_moving_shelf_UV_1_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -100,7 +100,7 @@ newmtl GS25_table_UV_1_2
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd GS25_table_UV_1_2_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -108,7 +108,7 @@ newmtl GS25_chairUV_1
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd GS25_chairUV_1_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -116,7 +116,7 @@ newmtl GS25_aircon_UV_1
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd GS25_aircon_UV_1_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -124,7 +124,7 @@ newmtl GS25_GS_light_UV
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd GS25_GS_light_UV_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -132,7 +132,7 @@ newmtl GS25_wall_01_2_UV
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd GS25_wall_01_2_UV_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -140,7 +140,7 @@ newmtl GS25_wall_01_1_UV_1_1
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd GS25_wall_01_1_UV_1_1_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -148,7 +148,7 @@ newmtl GS25_wall_01_1_UV_1
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd GS25_wall_01_1_UV_1_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -156,7 +156,7 @@ newmtl GS25_cabinet4_1_UV_0102
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd GS25_cabinet4_1_UV_0102_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -164,7 +164,7 @@ newmtl GS25_cabinet4_1_UV_0101
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd GS25_cabinet4_1_UV_0101_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -172,7 +172,7 @@ newmtl GS25_tabaco_2_UV_1
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd GS25_tabaco_2_UV_1_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -180,7 +180,7 @@ newmtl GS25_tabaco_UV_3
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd GS25_tabaco_UV_3_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -188,7 +188,7 @@ newmtl GS25_tabaco_UV_2
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd GS25_tabaco_UV_2_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -196,7 +196,7 @@ newmtl GS25_tabaco_UV_1
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd GS25_tabaco_UV_1_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -204,7 +204,7 @@ newmtl GS25_cabinet2_UV
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd GS25_cabinet2_UV_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -212,7 +212,7 @@ newmtl GS25_coffee_UV
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd GS25_coffee_UV_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -220,7 +220,7 @@ newmtl GS25_trash_UV_01
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd GS25_trash_UV_01_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -228,7 +228,7 @@ newmtl GS25_shelf_UV_1
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd GS25_shelf_UV_1_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -236,7 +236,7 @@ newmtl GS25_ice_box_UV_1
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd GS25_ice_box_UV_1_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -244,7 +244,7 @@ newmtl GS25_board_1_UV_1
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd GS25_board_1_UV_1_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -252,7 +252,7 @@ newmtl GS25_board_UV_1
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd GS25_board_UV_1_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -260,7 +260,7 @@ newmtl GS25_pillar_03_UV_1
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd GS25_pillar_03_UV_1_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -268,7 +268,7 @@ newmtl GS25_wall_01_2_UV_1
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd GS25_wall_01_2_UV_1_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -276,7 +276,7 @@ newmtl GS25_trash_1_UV_1
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd GS25_trash_1_UV_1_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -284,7 +284,7 @@ newmtl spot_light_UV_1
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd spot_light_UV_1_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -292,7 +292,7 @@ newmtl cafe_light_uv_1
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd cafe_light_uv_1_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -300,7 +300,7 @@ newmtl cafe_logo_txt_UV
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd cafe_logo_txt_UV_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -308,7 +308,7 @@ newmtl cafe_logo_UV
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd cafe_logo_UV_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -316,7 +316,7 @@ newmtl trash_can_UV
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd trash_can_UV_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -324,7 +324,7 @@ newmtl menu_UV_1
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd menu_UV_1_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -332,7 +332,7 @@ newmtl coffee_machine_UV_1
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd coffee_machine_UV_1_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -340,7 +340,7 @@ newmtl cabinet_UV_1
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd cabinet_UV_1_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -348,7 +348,7 @@ newmtl refrigerator_UV
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd refrigerator_UV_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -356,7 +356,7 @@ newmtl pos_2_UV_1
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd pos_2_UV_1_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -364,7 +364,7 @@ newmtl cafe_cabinet_1_1
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd cafe_cabinet_1_1_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -372,7 +372,7 @@ newmtl cafe_table_1
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd cafe_table_1_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -380,7 +380,7 @@ newmtl cafe_chair_UV_1
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd cafe_chair_UV_1_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -388,7 +388,7 @@ newmtl cafe_cabinet_1_1_01
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd cafe_cabinet_1_1_01_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -396,7 +396,7 @@ newmtl poster_UV_1
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd poster_UV_1_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -404,7 +404,7 @@ newmtl cafe_table_UV_1
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd cafe_table_UV_1_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -412,7 +412,7 @@ newmtl counter_UV_1
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd counter_UV_1_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -420,7 +420,7 @@ newmtl wall_01_1_UV_001
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd wall_01_1_UV_001_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -428,7 +428,7 @@ newmtl pillar_03_Instance_1_UV_1
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd pillar_03_Instance_1_UV_1_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -436,7 +436,7 @@ newmtl pillar_03_Instance_1_UV
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd pillar_03_Instance_1_UV_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -444,7 +444,7 @@ newmtl cafe_cabinet_2_UV_1
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd cafe_cabinet_2_UV_1_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -452,7 +452,7 @@ newmtl cafe_cabinet_3_UV_1
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd cafe_cabinet_3_UV_1_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -460,7 +460,7 @@ newmtl door_05
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd door_05_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -468,7 +468,7 @@ newmtl door_04
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd door_04_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -476,7 +476,7 @@ newmtl door_03
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd door_03_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -484,7 +484,7 @@ newmtl door_02
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd door_02_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -492,7 +492,7 @@ newmtl door_01
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd door_01_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -500,7 +500,7 @@ newmtl Shop_frame_UV_1
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd Shop_frame_UV_1_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -508,7 +508,7 @@ newmtl Shop_frame_4_UV_1
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd Shop_frame_4_UV_1_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -516,7 +516,7 @@ newmtl Shop_frame_1_UV_1_100
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd Shop_frame_UV_1_001_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -524,7 +524,7 @@ newmtl Shop_frame_7_UV_1_1
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd Shop_frame_7_UV_1_1_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -532,7 +532,7 @@ newmtl Shop_frame_11_UV_1_1
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd Shop_frame_11_UV_1_1_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -540,7 +540,7 @@ newmtl Shop_frame_1_UV_1
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd Shop_frame_1_UV_1_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -548,7 +548,7 @@ newmtl sign_GS25_UV
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd sign_GS25_UV_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -556,7 +556,7 @@ newmtl sign_kb_UV
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd sign_kb_UV_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -564,7 +564,7 @@ newmtl sign_health_UV
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd sign_health_UV_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -572,7 +572,7 @@ newmtl sign_cafe_UV
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd sign_cafe_UV_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -580,7 +580,7 @@ newmtl sign_bestshop_UV
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd sign_bestshop_UV_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -588,7 +588,7 @@ newmtl sign_Uplus_UV
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd sign_Uplus_UV_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -596,7 +596,7 @@ newmtl wall_3
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd wall_3_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -604,7 +604,7 @@ newmtl Slide_door_UV_1
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd Slide_door_UV_1_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -612,7 +612,7 @@ newmtl glass_wall_04
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd glass_wall_04_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -620,7 +620,7 @@ newmtl glass_wall_03
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd glass_wall_03_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -628,7 +628,7 @@ newmtl glass_wall_02
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd glass_wall_02_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -636,7 +636,7 @@ newmtl glass_wall_01
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd glass_wall_01_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -644,7 +644,7 @@ newmtl glass_walle_1
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd glass_walle_1_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -652,7 +652,7 @@ newmtl wall_UV_08
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd wall_UV_08_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -660,7 +660,7 @@ newmtl wall_UV_07
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd wall_UV_07_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -668,7 +668,7 @@ newmtl wall_2_UV_06
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd wall_2_UV_06_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -676,7 +676,7 @@ newmtl wall_UV_05
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd wall_UV_05_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -684,7 +684,7 @@ newmtl wall_UV_04
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd wall_UV_04_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -692,7 +692,7 @@ newmtl wall_UV_03
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd wall_UV_03_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -700,7 +700,7 @@ newmtl wall_UV_02
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd wall_UV_02_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -708,7 +708,7 @@ newmtl wall_UV_01
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd wall_UV_01_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -716,7 +716,7 @@ newmtl wall_02_UV_1
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd wall_02_UV_1_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -724,7 +724,7 @@ newmtl Plane_1_UV
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd Plane_1_UV_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -732,7 +732,7 @@ newmtl wall_shop_UV
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd wall_shop_UV_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -740,7 +740,7 @@ newmtl wall_shop_1_UV
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd wall_shop_1_UV_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -748,7 +748,7 @@ newmtl wall_shop_1
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd wall_shop_1_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -756,7 +756,7 @@ newmtl wall_02_UV
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd wall_02_UV_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -764,7 +764,7 @@ newmtl enterance_UV_1
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd enterance_UV_1_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -772,7 +772,7 @@ newmtl Cylinder_UV_1
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd Cylinder_UV_1_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -780,7 +780,7 @@ newmtl statue_frame_UV
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd statue_frame_UV_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -788,7 +788,7 @@ newmtl EV_wall_UV_33
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd EV_wall_UV_33_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -796,7 +796,7 @@ newmtl EV1_number_UV_11
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd EV1_number_UV_11_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -804,7 +804,7 @@ newmtl EV_wall_2_UV_22
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd EV_wall_2_UV_22_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -812,7 +812,7 @@ newmtl number_UV_1
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd number_UV_1_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -820,7 +820,7 @@ newmtl gate_R_UV_6
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd gate_R_UV_6_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -828,7 +828,7 @@ newmtl gate_L_UV_6
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd gate_L_UV_6_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -836,7 +836,7 @@ newmtl gate_R_UV_5
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd gate_R_UV_5_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -844,7 +844,7 @@ newmtl gate_L_UV_5
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd gate_L_UV_5_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -852,7 +852,7 @@ newmtl gate_R_UV_4
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd gate_R_UV_4_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -860,7 +860,7 @@ newmtl gate_L_UV_4
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd gate_L_UV_4_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -868,7 +868,7 @@ newmtl gate_R_UV_3
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd gate_R_UV_3_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -876,7 +876,7 @@ newmtl gate_L_UV_3
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd gate_L_UV_3_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -884,7 +884,7 @@ newmtl gate_R_UV_2
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd gate_R_UV_2_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -892,7 +892,7 @@ newmtl gate_L_UV_2
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd gate_L_UV_2_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -900,7 +900,7 @@ newmtl gate_R_UV_1
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd gate_R_UV_1_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -908,7 +908,7 @@ newmtl gate_L_UV_1
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd gate_L_UV_1_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -916,7 +916,7 @@ newmtl pillar_02_UV_1
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd pillar_02_UV_1_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -924,7 +924,7 @@ newmtl pillar_01_UV_1
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd pillar_01_UV_1_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -932,7 +932,7 @@ newmtl b1_bottom_UV
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd b1_bottom_UV_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 
@@ -940,7 +940,7 @@ newmtl b1_roof_UV_1
 Ka 1 1 1
 Kd 0.80000001192093 0.80000001192093 0.80000001192093
 map_Kd b1_roof_UV_1_DeMain_0000.jpg
-Ks 1 1 1
+Ks 0.2 0.2 0.2
 Ns 50
 illum 7
 

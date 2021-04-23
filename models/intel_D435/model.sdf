@@ -30,7 +30,7 @@
           <ambient>0.05 0.05 0.05 1</ambient>
           <diffuse>0.2 0.2 0.2 1</diffuse>
           <specular>0.1 0.1 0.1 1</specular>
-          <emissive>0.1 0.1 0.1 1</emissive>
+          <emissive>0.02 0.02 0.02 1</emissive>
         </material>
       </visual>
 

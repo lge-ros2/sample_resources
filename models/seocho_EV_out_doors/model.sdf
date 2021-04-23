@@ -20,7 +20,7 @@
         </mesh>
       </geometry>
       <material>
-        <emissive>0.7 0.7 0.7 0.7</emissive>
+        <emissive>0.02 0.02 0.02 1</emissive>
       </material>
     </visual>
   </link>
@@ -41,7 +41,7 @@
         </mesh>
       </geometry>
       <material>
-        <emissive>0.7 0.7 0.7 0.7</emissive>
+        <emissive>0.02 0.02 0.02 1</emissive>
       </material>
     </visual>
   </link>

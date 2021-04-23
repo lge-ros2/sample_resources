@@ -2,6 +2,6 @@
 
 newmtl default
 Kd 1 1 1
-Ks 1 1 1
+Ks 0.1 0.1 0.1
 Ns 50
 illum 7

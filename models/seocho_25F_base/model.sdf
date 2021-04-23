@@ -28,7 +28,7 @@
         </mesh>
       </geometry>
       <material>
-        <emissive>0.7 0.7 0.7 0.7</emissive>
+        <emissive>0.005 0.005 0.005 1</emissive>
       </material>
       <cast_shadows>0</cast_shadows>
     </visual>
@@ -42,7 +42,7 @@
         </mesh>
       </geometry>
       <material>
-        <diffuse>0 0.5 0 0.5</diffuse>
+        <diffuse>0 0.4 0 0.3</diffuse>
       </material>
       <cast_shadows>0</cast_shadows>
     </visual>

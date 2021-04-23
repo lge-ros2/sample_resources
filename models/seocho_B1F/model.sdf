@@ -1,6 +1,6 @@
 <?xml version='1.0'?>
 <sdf version='1.6'>
-<model name='seocho_B1_base'>
+<model name='seocho_B1F'>
   <static>1</static>
   <allow_auto_disable>1</allow_auto_disable>
   <link name='B1_body_link'>
@@ -8,7 +8,7 @@
       <geometry>
         <mesh>
           <scale>0.1 0.1 0.1</scale>
-          <uri>model://seocho_B1_base/meshes/B1_collision.obj</uri>
+          <uri>model://seocho_B1F/meshes/B1_collision.obj</uri>
         </mesh>
       </geometry>
     </collision>
@@ -16,7 +16,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>model://seocho_B1_base/meshes/B1_bottom_col.obj</uri>
+            <uri>model://seocho_B1F/meshes/B1_bottom_col.obj</uri>
           </mesh>
         </geometry>
         <surface>
@@ -35,7 +35,7 @@
       <geometry>
         <mesh>
           <scale>0.1 0.1 0.1</scale>
-          <uri>model://seocho_B1_base/meshes/B1_base.obj</uri>
+          <uri>model://seocho_B1F/meshes/B1_base.obj</uri>
         </mesh>
       </geometry>
       <material>
@@ -49,7 +49,7 @@
       <geometry>
         <mesh>
           <scale>0.1 0.1 0.1</scale>
-          <uri>model://seocho_B1_base/meshes/B1_glass.obj</uri>
+          <uri>model://seocho_B1F/meshes/B1_glass.obj</uri>
         </mesh>
       </geometry>
       <material>

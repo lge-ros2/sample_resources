@@ -5,12 +5,12 @@
 
   <include>
     <name>B1F</name>
-    <uri>model://seocho_B1_base</uri>
+    <uri>model://seocho_B1F</uri>
   </include>
 
   <include>
     <name>25F</name>
-    <uri>model://seocho_25F_base</uri>
+    <uri>model://seocho_25F</uri>
   </include>
 
   <include>

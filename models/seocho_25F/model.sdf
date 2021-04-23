@@ -1,14 +1,14 @@
 <?xml version='1.0'?>
 <sdf version='1.6'>
-<model name='seocho_25F_base'>
+<model name='seocho_25F'>
   <static>1</static>
   <allow_auto_disable>1</allow_auto_disable>
-  <link name='seocho_25F_base_body_link'>
+  <link name='seocho_25F_body_link'>
     <collision name='collision'>
       <geometry>
         <mesh>
           <scale>0.1 0.1 0.1</scale>
-          <uri>model://seocho_25F_base/meshes/25F_base_col.obj</uri>
+          <uri>model://seocho_25F/meshes/25F_base_col.obj</uri>
         </mesh>
       </geometry>
     </collision>
@@ -16,7 +16,7 @@
         <geometry>
           <mesh>
             <scale>0.1 0.1 0.1</scale>
-            <uri>model://seocho_25F_base/meshes/25F_bottom_col.obj</uri>
+            <uri>model://seocho_25F/meshes/25F_bottom_col.obj</uri>
           </mesh>
         </geometry>
       </collision>
@@ -24,7 +24,7 @@
       <geometry>
         <mesh>
           <scale>0.1 0.1 0.1</scale>
-          <uri>model://seocho_25F_base/meshes/25F_base.obj</uri>
+          <uri>model://seocho_25F/meshes/25F_base.obj</uri>
         </mesh>
       </geometry>
       <material>
@@ -38,7 +38,7 @@
       <geometry>
         <mesh>
           <scale>0.1 0.1 0.1</scale>
-          <uri>model://seocho_25F_base/meshes/25F_glass.obj</uri>
+          <uri>model://seocho_25F/meshes/25F_glass.obj</uri>
         </mesh>
       </geometry>
       <material>

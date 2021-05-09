@@ -236,7 +236,7 @@
   <joint name='link_MainBody_JOINT_depthcamera_front' type='fixed'>
     <parent>link_MainBody</parent>
     <child>depthcamera::link</child>
-  </joint>
+  </joint> -->
 
   <include>
     <uri>model://intel_D435</uri>
@@ -246,7 +246,7 @@
   <joint name='link_MainBody_JOINT_realsense_front' type='fixed'>
     <parent>link_MainBody</parent>
     <child>realsense::link</child>
-  </joint> -->
+  </joint>
 
   <include>
     <uri>model://robot_IMU</uri>
@@ -267,6 +267,16 @@
     <parent>link_MainBody</parent>
     <child>lidar::UAM05LPT301_link</child>
   </joint>
+
+  <!-- <include>
+    <uri>model://velodynelidar_VLP_16_gpu</uri>
+    <name>lidar</name>
+    <pose>0.270000 0 0.1125 0 0 0</pose>
+  </include>
+  <joint name='link_MainBody_JOINT_lidar' type='fixed'>
+    <parent>link_MainBody</parent>
+    <child>lidar::VLP-16_link</child>
+  </joint> -->
 
   <!-- <include>
     <uri>model://robot_USS</uri>
@@ -325,7 +335,7 @@
     <bumper>
     </bumper>
     <wheel>
-      <base>0.449</base>
+      <tread>0.449</tread>
       <radius>0.0955</radius>
       <location type="left">wheel_left</location>
       <location type="right">wheel_right</location>

@@ -238,7 +238,7 @@
     <child>depthcamera::link</child>
   </joint> -->
 
-  <include>
+  <!-- <include>
     <uri>model://intel_D435</uri>
     <name>realsense</name>
     <pose>0.344 0 1.0141 0 0 0</pose>
@@ -246,7 +246,7 @@
   <joint name='link_MainBody_JOINT_realsense_front' type='fixed'>
     <parent>link_MainBody</parent>
     <child>realsense::link</child>
-  </joint>
+  </joint> -->
 
   <include>
     <uri>model://robot_IMU</uri>

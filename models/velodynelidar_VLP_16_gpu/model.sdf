@@ -1,0 +1,84 @@
+<?xml version='1.0'?>
+<sdf version='1.6'>
+<model name="velodyne_VLP-16">
+  <static>0</static>
+  <link name="VLP-16_link">
+    <inertial>
+      <mass>0.830</mass>
+      <inertia>
+        <ixx>0</ixx>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyy>0</iyy>
+        <iyz>0</iyz>
+        <izz>0</izz>
+      </inertia>
+    </inertial>
+    <self_collide>0</self_collide>
+    <enable_wind>0</enable_wind>
+    <kinematic>0</kinematic>
+
+    <visual name="visual">
+      <geometry>
+        <mesh>
+          <uri>model://velodynelidar_VLP_16_gpu/meshes/VLP-16.STL</uri>
+        </mesh>
+      </geometry>
+      <material>
+        <lighting>1</lighting>
+        <ambient>0.3 0.3 0.3 1</ambient>
+        <diffuse>0.6 0.6 0.6 1</diffuse>
+        <specular>0.15 0.15 0.15 1</specular>
+        <emissive>0 0 0 1</emissive>
+      </material>
+    </visual>
+
+    <collision name="collision">
+      <max_contacts>2</max_contacts>
+      <geometry>
+        <cylinder>
+          <radius>0.05165</radius>
+          <length>0.0717</length>
+        </cylinder>
+      </geometry>
+    </collision>
+
+    <sensor name="VLP-16_laser" type="gpu_ray">
+      <pose>0 0 0 0 -0 0</pose>
+      <ray>
+        <scan>
+          <horizontal>
+            <samples>720</samples>
+            <resolution>1</resolution>
+            <min_angle>-3.14</min_angle>
+            <max_angle>+3.14</max_angle>
+          </horizontal>
+          <vertical>
+            <samples>16</samples>
+            <min_angle>-0.17</min_angle>
+            <max_angle>0.17</max_angle>
+          </vertical>
+        </scan>
+        <range>
+          <min>0.052</min>
+          <max>100</max>
+          <resolution>0.0025</resolution><!-- 0.1 deg -->
+        </range>
+      </ray>
+      <!--<noise></noise>-->
+      <always_on>true</always_on>
+      <update_rate>5</update_rate>
+      <visualize>true</visualize>
+
+      <plugin name="LaserPlugin" filename="libLaserPlugin.so" >
+        <ros2>
+          <topic_name>scan</topic_name>
+          <frame_id>base_scan</frame_id>
+          <output_type>PointCloud2</output_type>
+        </ros2>
+        <intensity>false</intensity>
+      </plugin>
+    </sensor>
+  </link>
+</model>
+</sdf>

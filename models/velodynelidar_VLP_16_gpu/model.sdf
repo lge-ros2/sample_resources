@@ -74,8 +74,8 @@
         <ros2>
           <topic_name>scan</topic_name>
           <frame_id>base_scan</frame_id>
-          <output_type>PointCloud2</output_type>
         </ros2>
+        <output_type>PointCloud2</output_type>
         <intensity>false</intensity>
       </plugin>
     </sensor>

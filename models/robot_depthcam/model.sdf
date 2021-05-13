@@ -61,7 +61,7 @@
       <plugin name='DepthCameraPlugin' filename='libCameraPlugin.so'>
         <ros2>
           <topic_name>depth</topic_name>
-          <frame_id>depth</frame_id>
+          <frame_id>base_link</frame_id>
         </ros2>
       </plugin>
     </sensor>

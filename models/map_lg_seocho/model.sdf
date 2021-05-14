@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <sdf version="1.6">
 <model name="SeochoTower">
-  <static>1</static>
+  <static>true</static>
 
   <include>
     <name>B1F</name>

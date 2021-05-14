@@ -116,10 +116,8 @@
       <!--<plugin name="lensflare" filename="libLensFlareSensorPlugin.so"/>-->
       <plugin name="MultiCameraPlugin" filename="libMultiCameraPlugin.so">
         <ros2>
-          <frames_id>
-            <frame_id>left</frame_id>
-            <frame_id>right</frame_id>
-          </frames_id>
+          <frame_id>left</frame_id>
+          <frame_id>right</frame_id>
         </ros2>
       </plugin>
     </sensor>

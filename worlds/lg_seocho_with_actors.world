@@ -219,10 +219,11 @@
     </script>
   </actor>
   <plugin name="GroundTruthPlugin" filename="libGroundTruthPlugin.so">
+    <publish_frequency>5</publish_frequency>
     <list>
-      <target class_id="101">cloi1</target>
-      <target class_id="100">actor1</target>
-      <target class_id="100">actor2</target>
+      <target tracking_id="0" class_id="101">cloi1</target>
+      <target tracking_id="1" class_id="100">actor1</target>
+      <target tracking_id="2" class_id="100">actor2</target>
     </list>
   </plugin>
 </world>

@@ -34,7 +34,6 @@
     <uri>model://CLOi_porter</uri>
     <pose>-43.81 -28.77 -6.546 0 0 3.14</pose>
   </include>
-<!--
 
   <include>
     <name>cloi2</name>
@@ -48,7 +47,7 @@
     <uri>model://CLOi_porter</uri>
     <pose>-34.81 -38.77 -6.546 0 0 3.14</pose>
   </include>
- -->
+
   <actor name="actor1">
     <pose>-35.92 -28.22 -6.59 0 0 0</pose>
     <skin>

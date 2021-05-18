@@ -29,7 +29,6 @@
   <include>
     <uri>model://map_lg_seocho</uri>
   </include>
-
   <include>
     <name>cloi1</name>
     <uri>model://CLOi_porter</uri>
@@ -41,6 +40,7 @@
     <uri>model://CLOi_porter</uri>
     <pose>-39.81 -38.77 -6.546 0 0 3.14</pose>
   </include>
+
 
   <include>
     <name>cloi3</name>
@@ -217,5 +217,13 @@
       </trajectory>
     </script>
   </actor>
+  <plugin name="GroundTruthPlugin" filename="libGroundTruthPlugin.so">
+    <publish_frequency>5</publish_frequency>
+    <list>
+      <target tracking_id="0" class_id="101">cloi1</target>
+      <target tracking_id="1" class_id="100">actor1</target>
+      <target tracking_id="2" class_id="100">actor2</target>
+    </list>
+  </plugin>
 </world>
 </sdf>

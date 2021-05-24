@@ -29,11 +29,13 @@
   <include>
     <uri>model://map_lg_seocho</uri>
   </include>
+
   <include>
     <name>cloi1</name>
     <uri>model://CLOi_porter</uri>
     <pose>-43.81 -28.77 -6.546 0 0 3.14</pose>
   </include>
+
 
   <include>
     <name>cloi2</name>
@@ -41,12 +43,12 @@
     <pose>-39.81 -38.77 -6.546 0 0 3.14</pose>
   </include>
 
-
   <include>
     <name>cloi3</name>
     <uri>model://CLOi_porter</uri>
     <pose>-34.81 -38.77 -6.546 0 0 3.14</pose>
   </include>
+
 
   <actor name="actor1">
     <pose>-35.92 -28.22 -6.59 0 0 0</pose>
@@ -59,18 +61,48 @@
       <scale>1.0</scale>
       <interpolate_x>true</interpolate_x>
     </animation>
-    <!-- <plugin name="actor1_plugin" filename="libActorsPlugin.so">
-      <target>98.9 107.9 1.04109</target>
-      <target_weight>1.1</target_weight>
-      <obstacle_weight>1.5</obstacle_weight>
-      <animation_factor>3.1</animation_factor>
-      <ignore_obstacles>
-        <model>ground_plane</model>
-      </ignore_obstacles>
-    </plugin> -->
+    <script>
+      <loop>true</loop>
+      <delay_start>0.0</delay_start>
+      <auto_start>true</auto_start>
+    </script>
   </actor>
 
   <actor name="actor2">
+    <pose>-33.92 -27.22 -6.59 0 0 0</pose>
+    <skin>
+      <filename>file://models/walk.dae</filename>
+      <scale>1.0</scale>
+    </skin>
+    <animation name="walk">
+      <filename>file://models/walk.dae</filename>
+      <scale>1.0</scale>
+      <interpolate_x>true</interpolate_x>
+    </animation>
+    <animation name="stand">
+      <filename>file://models/stand.dae</filename>
+      <scale>1.0</scale>
+      <interpolate_x>true</interpolate_x>
+    </animation>
+    <script>
+      <loop>true</loop>
+      <delay_start>0.0</delay_start>
+      <auto_start>true</auto_start>
+    </script>
+    <plugin name="actor_plugin" filename="libActorPlugin.so">
+      <default_motion>random_moving</default_motion>
+      <!-- <default_motion>standy</default_motion> -->
+      <motion speed='3.5'>
+        <item type="standby">stand</item>
+        <item type="moving">walk</item>
+      </motion>
+      <activity_zone>
+        <target_model>B1F</target_model>
+      </activity_zone>
+    </plugin>
+  </actor>
+
+  <actor name="actor3">
     <pose>-42.28 -20.08 -6.59 0 0 0</pose>
     <skin>
       <filename>file://models/run.dae</filename>
@@ -217,12 +249,14 @@
       </trajectory>
     </script>
   </actor>
+
   <plugin name="GroundTruthPlugin" filename="libGroundTruthPlugin.so">
     <publish_frequency>5</publish_frequency>
     <list>
       <target tracking_id="0" class_id="101">cloi1</target>
       <target tracking_id="1" class_id="100">actor1</target>
       <target tracking_id="2" class_id="100">actor2</target>
+      <target tracking_id="3" class_id="100">actor3</target>
     </list>
   </plugin>
 </world>

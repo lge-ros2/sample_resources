@@ -90,14 +90,22 @@
       <auto_start>true</auto_start>
     </script>
     <plugin name="actor_plugin" filename="libActorPlugin.so">
-      <default_motion>random_moving</default_motion>
-      <!-- <default_motion>standy</default_motion> -->
-      <motion speed='3.5'>
-        <item type="standby">stand</item>
-        <item type="moving">walk</item>
+      <default>
+        <motion>random</motion>
+        <!-- <motion animation="stand">assign</motion> -->
+        <steering>
+          <speed>0.4</speed>
+          <angular_speed>2.09</angular_speed>
+          <acceleration>8</acceleration>
+        </steering>
+      </default>
+      <motion>
+        <standby>stand</standby>
+        <moving>walk</moving>
       </motion>
       <activity_zone>
-        <target_model>B1F</target_model>
+        <model>B1F</model>
+        <!-- <model>25F</model> -->
       </activity_zone>
     </plugin>
   </actor>
@@ -259,5 +267,7 @@
       <target tracking_id="3" class_id="100">actor3</target>
     </list>
   </plugin>
+
+  <plugin name="ActorControlPlugin" filename="libActorControlPlugin.so" />
 </world>
 </sdf>

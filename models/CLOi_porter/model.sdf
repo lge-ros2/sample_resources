@@ -269,7 +269,7 @@
   </joint>
 
   <!-- <include>
-    <uri>model://velodynelidar_VLP_16_gpu</uri>
+    <uri>model://velodyne_VLP16</uri>
     <name>lidar</name>
     <pose>0.270000 0 0.1125 0 0 0</pose>
   </include>

@@ -68,9 +68,9 @@
       </surface>
     </collision>
 
-    <sensor name="hokuyo_laser" type="gpu_ray">
+    <sensor name="hokuyo_laser" type="gpu_lidar">
       <pose>0 0 0.070 0 -0 0</pose>
-      <ray>
+      <lidar>
         <scan>
           <horizontal>
             <samples>1081</samples>
@@ -84,10 +84,12 @@
           <max>20</max>
           <resolution>0.004363</resolution><!-- 0.25 deg -->
         </range>
-        <noise>
-          <type>custom</type>
-        </noise>
-      </ray>
+        <!-- <noise>
+          <type>gaussian</type>
+          <mean>0.0</mean>
+          <stddev>0.001</stddev>
+        </noise> -->
+      </lidar>
       <always_on>1</always_on>
       <update_rate>33.33333</update_rate>
       <visualize>true</visualize>

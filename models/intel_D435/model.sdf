@@ -125,6 +125,7 @@
         <always_on>true</always_on>
       </sensor>
     </link>
+
     <plugin name="D435Plugin" filename="libRealSensePlugin.so">
       <configuration>
         <depth_scale>1000</depth_scale>

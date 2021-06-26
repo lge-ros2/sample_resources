@@ -319,11 +319,6 @@
   </joint-->
 
   <plugin name='RobotControl' filename='libMicomPlugin.so'>
-    <PID>
-      <kp>1.0</kp>
-      <ki>0.05</ki>
-      <kd>0.0</kd>
-    </PID>
     <uss>
       <!-- <sensor>USS_left1</sensor> -->
     </uss>
@@ -335,6 +330,11 @@
     <bumper>
     </bumper>
     <wheel>
+      <PID>
+        <kp>1.0</kp>
+        <ki>0.05</ki>
+        <kd>0.0</kd>
+      </PID>
       <tread>0.449</tread>
       <radius>0.0955</radius>
       <location type="left">wheel_left</location>
@@ -344,15 +344,17 @@
         <brake>13.0</brake>
       </friction>
     </wheel>
-    <update_rate>20</update_rate>
+    <update_rate>0</update_rate>
     <ros2>
-      <transform_name>
-        <imu>imu</imu>
-        <wheels>
-          <left>wheel_left</left>
-          <right>wheel_right</right>
-        </wheels>
-      </transform_name>
+      <static_transforms>
+        <link parent_frame_id="base_link">link_imu</link>
+        <link parent_frame_id="base_link">SuspensionLeft::link</link>
+        <link parent_frame_id="base_link">SuspensionRight::link</link>
+      </static_transforms>
+      <transforms>
+        <link parent_frame_id="SuspensionLeft::link">wheel_left::link</link>
+        <link parent_frame_id="SuspensionRight::link">wheel_right::link</link>
+      </transforms>
     </ros2>
   </plugin>
 </model>

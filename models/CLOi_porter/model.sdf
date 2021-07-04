@@ -344,7 +344,7 @@
         <brake>13.0</brake>
       </friction>
     </wheel>
-    <update_rate>0</update_rate>
+    <update_rate>20</update_rate>
     <ros2>
       <static_transforms>
         <link parent_frame_id="base_link">link_imu</link>

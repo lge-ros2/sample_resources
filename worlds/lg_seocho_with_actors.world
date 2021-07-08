@@ -90,7 +90,7 @@
     <plugin name="actor_plugin" filename="libActorPlugin.so">
       <default>
         <motion>random</motion>
-        <!-- <motion>assign</motion> -->
+        <!-- <motion>manual</motion> -->
         <steering>
           <speed>0.4</speed>
           <angular_speed>2.09</angular_speed>
@@ -132,7 +132,7 @@
     <plugin name="actor_plugin" filename="libActorPlugin.so">
       <default>
         <!-- <motion>random</motion> -->
-        <motion>assign</motion>
+        <motion>manual</motion>
         <steering>
           <speed>0.4</speed>
           <angular_speed>2.09</angular_speed>

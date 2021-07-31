@@ -92,7 +92,7 @@
       </lidar>
       <always_on>1</always_on>
       <update_rate>33.33333</update_rate>
-      <visualize>true</visualize>
+      <visualize>false</visualize>
 
       <plugin name="LaserPlugin" filename="libLaserPlugin.so" >
         <ros2>

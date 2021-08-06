@@ -7,6 +7,13 @@
     </camera>
   </gui>
 
+  <light name='sun' type='directional'>
+    <cast_shadows>1</cast_shadows>
+    <pose>0 0 500 0 -0 0</pose>
+    <diffuse>0.9528302 0.9528302 0.9528302 1</diffuse>
+    <direction>0 0 -1</direction>
+  </light>
+
   <include>
     <uri>model://ground</uri>
   </include>
@@ -15,6 +22,12 @@
     <name>cloi1</name>
     <uri>model://CLOi_porter</uri>
   </include>
+
+  <!-- <include>
+    <name>spot</name>
+    <uri>model://spot</uri>
+    <pose>0 0 0.75 0 0 0</pose>
+  </include> -->
 
 </world>
 </sdf>

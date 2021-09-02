@@ -270,12 +270,12 @@
 
   <!-- <include>
     <uri>model://velodyne_VLP16</uri>
-    <name>lidar</name>
+    <name>lidar_3d</name>
     <pose>0.270000 0 0.1125 0 0 0</pose>
   </include>
-  <joint name='link_MainBody_JOINT_lidar' type='fixed'>
+  <joint name='link_MainBody_JOINT_lidar_3d' type='fixed'>
     <parent>link_MainBody</parent>
-    <child>lidar::VLP-16_link</child>
+    <child>lidar_3d::link</child>
   </joint> -->
 
   <!-- <include>

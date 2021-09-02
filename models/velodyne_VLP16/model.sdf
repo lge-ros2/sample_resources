@@ -1,8 +1,8 @@
 <?xml version='1.0'?>
 <sdf version='1.6'>
-<model name="velodyne_VLP-16">
+<model name="velodyne_VLP16">
   <static>0</static>
-  <link name="VLP-16_link">
+  <link name="link">
     <inertial>
       <mass>0.830</mass>
       <inertia>
@@ -21,7 +21,7 @@
     <visual name="visual">
       <geometry>
         <mesh>
-          <uri>model://velodynelidar_VLP_16_gpu/meshes/VLP-16.STL</uri>
+          <uri>model://velodyne_VLP16/meshes/VLP-16.STL</uri>
         </mesh>
       </geometry>
       <material>
@@ -67,12 +67,12 @@
       </ray>
       <!--<noise></noise>-->
       <always_on>true</always_on>
-      <update_rate>5</update_rate>
+      <update_rate>30</update_rate>
       <visualize>false</visualize>
 
       <plugin name="LaserPlugin" filename="libLaserPlugin.so" >
         <ros2>
-          <topic_name>scan</topic_name>
+          <topic_name>scan3d</topic_name>
           <frame_id>base_scan</frame_id>
         </ros2>
         <output_type>PointCloud2</output_type>

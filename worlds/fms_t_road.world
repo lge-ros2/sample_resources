@@ -18,19 +18,19 @@
 
   <include>
     <name>cloi</name>
-    <uri>model://CLOi_delivery</uri>
+    <uri>model://CLOi_ServeBot_FnB</uri>
     <pose>0.65 -3.0 0 0 0 1.57</pose>
   </include>
 
   <include>
     <name>cloi01</name>
-    <uri>model://CLOi_delivery</uri>
+    <uri>model://CLOi_ServeBot_FnB</uri>
     <pose>0.65 -2.0 0 0 0 1.57</pose>
   </include>
 
   <!-- <include>
     <name>cloi02</name>
-    <uri>model://CLOi_delivery</uri>
+    <uri>model://CLOi_ServeBot_FnB</uri>
     <pose>0.65 -1.0 0 0 0 -1.57</pose>
   </include> -->
 </world>

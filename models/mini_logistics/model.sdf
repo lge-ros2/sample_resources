@@ -1,0 +1,245 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+<model name='mini_logistics'>
+  <static>true</static>
+  <pose>0 0 0 0 0 0</pose>
+  <link name='link'>
+    <collision name='collision'>
+      <geometry>
+        <plane>
+          <normal>0 0 1</normal>
+          <size>1000 1000</size>
+        </plane>
+      </geometry>
+    </collision>
+
+    <visual name='visual'>
+      <cast_shadows>0</cast_shadows>
+      <geometry>
+        <plane>
+          <normal>0 0 1</normal>
+          <size>1000 1000</size>
+        </plane>
+      </geometry>
+      <material> 
+        <ambient>0.2 0.2 0.2 0.0</ambient>
+        <diffuse>0.2 0.2 0.2 0.0</diffuse>
+        <specular>0 0 0 0</specular>
+        <emissive>0 0 0 1</emissive>
+      </material>
+    </visual>
+    <self_collide>0</self_collide>
+    <enable_wind>0</enable_wind>
+    <kinematic>0</kinematic>
+  </link>
+
+  <link name="wall_wall_0">
+    <pose>-0.17 0.00 0.20 0 0 0</pose>
+    <collision>
+      <geometry>
+        <box>
+          <size>0.34 10.34 0.40</size>
+        </box>
+      </geometry>
+    </collision>
+    <visual>
+      <geometry>
+        <box>
+          <size>0.34 10.34 0.40</size>
+        </box>
+      </geometry>
+      <material>
+        <ambient>0.4 0.4 0.4 1.0</ambient>
+        <diffuse>0.4 0.4 0.4 1.0</diffuse>
+        <specular>0 0 0 0</specular>
+        <emissive>0 0 0 1</emissive>
+      </material>
+    </visual>
+    <self_collide>0</self_collide>
+    <enable_wind>0</enable_wind>
+    <kinematic>0</kinematic>
+  </link>
+  <link name="wall_wall_1">
+    <pose>10.17 0.00 0.20 0 0 0</pose>
+    <collision>
+      <geometry>
+        <box>
+          <size>0.34 10.34 0.40</size>
+        </box>
+      </geometry>
+    </collision>
+    <visual>
+      <geometry>
+        <box>
+          <size>0.34 10.34 0.40</size>
+        </box>
+      </geometry>
+      <material>
+        <ambient>0.4 0.4 0.4 1.0</ambient>
+        <diffuse>0.4 0.4 0.4 1.0</diffuse>
+        <specular>0 0 0 0</specular>
+        <emissive>0 0 0 1</emissive>
+      </material>
+    </visual>
+    <self_collide>0</self_collide>
+    <enable_wind>0</enable_wind>
+    <kinematic>0</kinematic>
+  </link>
+  <link name="wall_wall_2">
+    <pose>5.00 5.00 0.20 0 0 0</pose>
+    <collision>
+      <geometry>
+        <box>
+          <size>10.34 0.34 0.40</size>
+        </box>
+      </geometry>
+    </collision>
+    <visual>
+      <geometry>
+        <box>
+          <size>10.34 0.34 0.40</size>
+        </box>
+      </geometry>
+      <material>
+        <ambient>0.4 0.4 0.4 1.0</ambient>
+        <diffuse>0.4 0.4 0.4 1.0</diffuse>
+        <specular>0 0 0 0</specular>
+        <emissive>0 0 0 1</emissive>
+      </material>
+    </visual>
+    <self_collide>0</self_collide>
+    <enable_wind>0</enable_wind>
+    <kinematic>0</kinematic>
+  </link>
+  <link name="wall_wall_3">
+    <pose>5.00 -5.00 0.20 0 0 0</pose>
+    <collision>
+      <geometry>
+        <box>
+          <size>10.34 0.34 0.40</size>
+        </box>
+      </geometry>
+    </collision>
+    <visual>
+      <geometry>
+        <box>
+          <size>10.34 0.34 0.40</size>
+        </box>
+      </geometry>
+      <material>
+        <ambient>0.4 0.4 0.4 1.0</ambient>
+        <diffuse>0.4 0.4 0.4 1.0</diffuse>
+        <specular>0 0 0 0</specular>
+        <emissive>0 0 0 1</emissive>
+      </material>
+    </visual>
+    <self_collide>0</self_collide>
+    <enable_wind>0</enable_wind>
+    <kinematic>0</kinematic>
+  </link>
+  <link name="wall_shelf_0">
+    <pose>2.60 0.00 0.20 0 0 0</pose>
+    <collision>
+      <geometry>
+        <box>
+          <size>0.34 7.20 0.40</size>
+        </box>
+      </geometry>
+    </collision>
+    <visual>
+      <geometry>
+        <box>
+          <size>0.34 7.20 0.40</size>
+        </box>
+      </geometry>
+      <material>
+        <ambient>0.4 0.4 0.4 1.0</ambient>
+        <diffuse>0.4 0.4 0.4 1.0</diffuse>
+        <specular>0 0 0 0</specular>
+        <emissive>0 0 0 1</emissive>
+      </material>
+    </visual>
+    <self_collide>0</self_collide>
+    <enable_wind>0</enable_wind>
+    <kinematic>0</kinematic>
+  </link>
+  <link name="wall_shelf_1">
+    <pose>4.20 0.00 0.20 0 0 0</pose>
+    <collision>
+      <geometry>
+        <box>
+          <size>0.34 7.20 0.40</size>
+        </box>
+      </geometry>
+    </collision>
+    <visual>
+      <geometry>
+        <box>
+          <size>0.34 7.20 0.40</size>
+        </box>
+      </geometry>
+      <material>
+        <ambient>0.4 0.4 0.4 1.0</ambient>
+        <diffuse>0.4 0.4 0.4 1.0</diffuse>
+        <specular>0 0 0 0</specular>
+        <emissive>0 0 0 1</emissive>
+      </material>
+    </visual>
+    <self_collide>0</self_collide>
+    <enable_wind>0</enable_wind>
+    <kinematic>0</kinematic>
+  </link>
+  <link name="wall_shelf_2">
+    <pose>5.80 0.00 0.20 0 0 0</pose>
+    <collision>
+      <geometry>
+        <box>
+          <size>0.34 7.20 0.40</size>
+        </box>
+      </geometry>
+    </collision>
+    <visual>
+      <geometry>
+        <box>
+          <size>0.34 7.20 0.40</size>
+        </box>
+      </geometry>
+      <material>
+        <ambient>0.4 0.4 0.4 1.0</ambient>
+        <diffuse>0.4 0.4 0.4 1.0</diffuse>
+        <specular>0 0 0 0</specular>
+        <emissive>0 0 0 1</emissive>
+      </material>
+    </visual>
+    <self_collide>0</self_collide>
+    <enable_wind>0</enable_wind>
+    <kinematic>0</kinematic>
+  </link>
+  <link name="wall_shelf_3">
+    <pose>7.40 0.00 0.20 0 0 0</pose>
+    <collision>
+      <geometry>
+        <box>
+          <size>0.34 7.20 0.40</size>
+        </box>
+      </geometry>
+    </collision>
+    <visual>
+      <geometry>
+        <box>
+          <size>0.34 7.20 0.40</size>
+        </box>
+      </geometry>
+      <material>
+        <ambient>0.4 0.4 0.4 1.0</ambient>
+        <diffuse>0.4 0.4 0.4 1.0</diffuse>
+        <specular>0 0 0 0</specular>
+        <emissive>0 0 0 1</emissive>
+      </material>
+    </visual>
+    <self_collide>0</self_collide>
+    <enable_wind>0</enable_wind>
+    <kinematic>0</kinematic>
+  </link>
+</model>
+</sdf>

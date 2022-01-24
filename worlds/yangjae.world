@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+<world name="lg_seocho_world">
+  <gui>
+    <camera name="user_camera">
+      <pose>-291.816 -135.0868 -21.0 0 0 -2.88</pose>
+    </camera>
+  </gui>
+
+  <spherical_coordinates>
+    <surface_model>EARTH_WGS84</surface_model>
+    <world_frame_orientation>ENU</world_frame_orientation>
+    <latitude_deg>37.46105</latitude_deg>
+    <longitude_deg>127.03418</longitude_deg>
+    <elevation>40</elevation>
+    <heading_deg>-47</heading_deg>
+  </spherical_coordinates>
+
+  <light name='sun' type='directional'>
+    <cast_shadows>1</cast_shadows>
+    <pose>0 0 500 0 -0 0</pose>
+    <diffuse>0.9528302 0.9528302 0.9528302 1</diffuse>
+    <!-- <attenuation>
+      <range>1000</range>
+    </attenuation> -->
+    <direction>0 0 -1</direction>
+  </light>
+
+  <include>
+    <uri>model://YangjaeWorld</uri>
+  </include>
+
+  <include>
+    <name>cloi1</name>
+    <uri>model://CLOi_ROID</uri>
+    <pose>-302.9819 -134.2192 -24.913 0 0 0</pose>
+  </include>
+</world>
+</sdf>

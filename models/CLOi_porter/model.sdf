@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <sdf version='1.6'>
-<model name='CLOi_porter'>
+<model name='CLOi_porter' canonical_link="link_MainBody">
   <link name='link_MainBody'>
     <inertial>
       <mass>60</mass>
@@ -88,11 +88,12 @@
       <limit>
         <upper>0.04</upper>
         <lower>0.0</lower>
+        <effort>40</effort>
       </limit>
       <dynamics>
         <friction>0.5</friction>
-        <damping>1000</damping>
-        <spring_stiffness>10000</spring_stiffness>
+        <damping>70</damping>
+        <spring_stiffness>80</spring_stiffness>
       </dynamics>
     </axis>
   </joint>
@@ -124,12 +125,13 @@
       <xyz>0 0 1</xyz>
       <limit>
         <upper>0.04</upper>
-        <lower>0.00</lower>
+        <lower>0.0</lower>
+        <effort>40</effort>
       </limit>
       <dynamics>
         <friction>0.5</friction>
-        <damping>1000</damping>
-        <spring_stiffness>10000</spring_stiffness>
+        <damping>70</damping>
+        <spring_stiffness>80</spring_stiffness>
       </dynamics>
     </axis>
   </joint>
@@ -228,7 +230,7 @@
     <child>camera::link</child>
   </joint>
 
-  <!-- <include>
+  <include>
     <uri>model://robot_depthcam</uri>
     <name>depthcamera</name>
     <pose>0.344 0 1.0141 0 0 0</pose>
@@ -236,7 +238,7 @@
   <joint name='link_MainBody_JOINT_depthcamera_front' type='fixed'>
     <parent>link_MainBody</parent>
     <child>depthcamera::link</child>
-  </joint> -->
+  </joint>
 
   <!-- <include>
     <uri>model://intel_D435</uri>

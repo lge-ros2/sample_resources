@@ -134,7 +134,51 @@
         <!-- <motion>random</motion> -->
         <motion>manual</motion>
         <steering>
-          <speed>0.4</speed>
+          <speed>1.4</speed>
+          <angular_speed>2.09</angular_speed>
+          <acceleration>8</acceleration>
+        </steering>
+      </default>
+      <motion>
+        <standby>stand</standby>
+        <moving>run</moving>
+      </motion>
+      <activity_zone>
+        <model>B1F</model>
+        <!-- <model>25F</model> -->
+      </activity_zone>
+    </plugin>
+  </actor>
+
+
+
+  <actor name="actor3_1">
+    <pose>-30.92 -25.22 -6.59 0 0 0</pose>
+    <skin>
+      <filename>file://models/run.dae</filename>
+      <scale>1.0</scale>
+    </skin>
+    <animation name="run">
+      <filename>file://models/run.dae</filename>
+      <scale>1.0</scale>
+      <interpolate_x>true</interpolate_x>
+    </animation>
+    <animation name="stand">
+      <filename>file://models/stand.dae</filename>
+      <scale>1.0</scale>
+      <interpolate_x>true</interpolate_x>
+    </animation>
+    <script>
+      <loop>true</loop>
+      <delay_start>0.0</delay_start>
+      <auto_start>true</auto_start>
+    </script>
+    <plugin name="actor_plugin" filename="libActorPlugin.so">
+      <default>
+        <!-- <motion>random</motion> -->
+        <motion>manual</motion>
+        <steering>
+          <speed>1.4</speed>
           <angular_speed>2.09</angular_speed>
           <acceleration>8</acceleration>
         </steering>

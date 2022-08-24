@@ -267,7 +267,7 @@
   </include>
   <joint name='link_MainBody_JOINT_lidar' type='fixed'>
     <parent>link_MainBody</parent>
-    <child>lidar::UAM05LPT301_link</child>
+    <child>lidar::link</child>
   </joint>
 
   <!-- <include>
@@ -317,7 +317,7 @@
   </include>
   <joint name='link_MainBody_JOINT_rear_lidar' type='fixed'>
     <parent>link_MainBody</parent>
-    <child>rear_lidar::UAM05LPT301_link</child>
+    <child>rear_lidar::link</child>
   </joint-->
 
   <plugin name='RobotControl' filename='libMicomPlugin.so'>

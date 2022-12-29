@@ -12,14 +12,34 @@
         </mesh>
       </geometry>
     </collision>
-      <collision name='bottom_collision'>
-        <geometry>
-          <mesh>
-            <scale>0.1 0.1 0.1</scale>
-            <uri>model://seocho_25F/meshes/25F_bottom_col.obj</uri>
-          </mesh>
-        </geometry>
-      </collision>
+    <collision name='bottom_collision'>
+      <geometry>
+        <mesh>
+          <scale>0.1 0.1 0.1</scale>
+          <uri>model://seocho_25F/meshes/25F_bottom_col.obj</uri>
+        </mesh>
+      </geometry>
+    </collision>
+    <collision name='bottom_collision2'>
+      <pose>-55 -29.25 150.13 0 0 0</pose>
+      <geometry>
+        <plane>
+          <normal>0 0 1</normal>
+          <size>14.5 3.625</size>
+        </plane>
+      </geometry>
+      <surface>
+        <friction>
+          <ode>
+            <mu>100</mu>
+            <mu2>50</mu2>
+            <fdir1>0 0 0</fdir1>
+            <slip1>0</slip1>
+            <slip2>0</slip2>
+          </ode>
+        </friction>
+      </surface>
+    </collision>
     <visual name='visual'>
       <geometry>
         <mesh>

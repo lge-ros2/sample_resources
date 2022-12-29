@@ -2,8 +2,8 @@
 <sdf version='1.6'>
 <model name='CLOi_porter' canonical_link="link_MainBody">
   <link name='link_MainBody'>
-    <inertial>
-      <mass>60</mass>
+   <inertial>
+      <mass>59</mass>
       <inertia>
         <ixx>11.12720579</ixx>
         <ixy>0</ixy>
@@ -88,7 +88,7 @@
       <limit>
         <upper>0.04</upper>
         <lower>0.0</lower>
-        <effort>40</effort>
+        <effort>30</effort>
       </limit>
       <dynamics>
         <friction>0.5</friction>
@@ -126,7 +126,7 @@
       <limit>
         <upper>0.04</upper>
         <lower>0.0</lower>
-        <effort>40</effort>
+        <effort>30</effort>
       </limit>
       <dynamics>
         <friction>0.5</friction>

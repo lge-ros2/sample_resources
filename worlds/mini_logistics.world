@@ -17,13 +17,13 @@
   </include>
 
   <include>
-    <name>cloi</name>
+    <name>acloi00</name>
     <uri>model://CLOi_ServeBot_FnB</uri>
     <pose>0.65 -2.5 0 0 0 0</pose>
   </include>
 
   <include>
-    <name>cloi01</name>
+    <name>acloi01</name>
     <uri>model://CLOi_ServeBot_FnB</uri>
     <pose>0.65 2.5 0 0 0 0</pose>
   </include>

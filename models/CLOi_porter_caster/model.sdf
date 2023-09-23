@@ -123,7 +123,7 @@
     <parent>link</parent>
     <child>link_caster_wheel</child>
     <axis>
-      <xyz>0 0 -1</xyz>
+      <xyz>0 1 0</xyz>
       <dynamics>
         <friction>0.005</friction>
       </dynamics>

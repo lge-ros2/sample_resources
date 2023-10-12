@@ -101,7 +101,7 @@
     <parent>SuspensionLeft::link</parent>
     <child>wheel_left::link</child>
     <axis>
-      <xyz>0 1 0</xyz>
+      <xyz>0 0 1</xyz>
       <dynamics>
         <friction>0.01</friction>
       </dynamics>
@@ -139,7 +139,7 @@
     <parent>SuspensionRight::link</parent>
     <child>wheel_right::link</child>
     <axis>
-      <xyz>0 1 0</xyz>
+      <xyz>0 0 -1</xyz>
       <dynamics>
         <friction>0.01</friction>
       </dynamics>

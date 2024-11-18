@@ -2,8 +2,11 @@
 <sdf version="1.6">
 <world name="lg_seocho_world">
   <gui>
-    <camera name="user_camera">
+    <!-- <camera name="user_camera">
       <pose>10 -29.29 10 0 0.523 1.5707</pose>
+    </camera> -->
+    <camera name="user_camera">
+      <pose>3.3184821606 -19.8310699463 1.6386370659 -0.0000000040 0.4425958549 2.1718371304</pose>
     </camera>
   </gui>
 
@@ -15,19 +18,49 @@
   </light>
 
   <include>
+    <name>cloi1</name>
+    <uri>model://CLOi_porter</uri>
+    <pose>2.3007 -17.3954 0.24 0 0 0</pose>
+  </include>
+
+  <!-- <include>
+    <name>CLOi</name>
+    <uri>model://L9S</uri>
+    <pose>2.3007 -17.3954 0.24 0 0 0</pose>
+  </include> -->
+
+  <!-- <include>
+    <name>CLOi</name>
+    <uri>model://Q9</uri>
+    <pose>2.3007 -17.3954 0.24 0 0 0</pose>
+  </include> -->
+
+  <include>
     <uri>model://ground</uri>
   </include>
 
-  <include>
-    <name>cloi1</name>
-    <uri>model://CLOi_porter</uri>
-  </include>
+  <!-- <include>
+    <name>se3</name>
+    <uri>model://stretch3</uri>
+    <pose>2.3007 -18.3954 0.1 0 0 0</pose>
+  </include> -->
+
+  <!-- <include>
+    <name>CLOi_AMR</name>
+    <uri>model://CLOi_AMR</uri>
+    <pose>2.3007 -18.3954 0.1 0 0 0</pose>
+  </include> -->
+
+  <!-- <include>
+    <name>CLOi_AMR</name>
+    <uri>model://CLOi_AMR_with_gripper</uri>
+    <pose>2.3007 -18.3954 0.1 0 0 0</pose>
+  </include> -->
 
   <!-- <include>
     <name>spot</name>
     <uri>model://spot</uri>
     <pose>0 0 0.75 0 0 0</pose>
   </include> -->
-
 </world>
 </sdf>

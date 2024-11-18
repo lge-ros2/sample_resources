@@ -4,7 +4,7 @@
   <!--<allow_auto_disable>1</allow_auto_disable>-->
   <link name='link'>
     <inertial>
-      <mass>0.8</mass>
+      <mass>1.5</mass>
       <inertia>
         <ixx>0.00216667</ixx>
         <ixy>0</ixy>
@@ -50,15 +50,11 @@
         <friction>
           <ode>
             <mu>0.99</mu>
-            <mu2>0.85</mu2>
             <fdir1>0 0 1</fdir1>
-            <slip1>0.0</slip1>
-            <slip2>0.0</slip2>
           </ode>
         </friction>
         <bounce>
-          <restitution_coefficient>0.00</restitution_coefficient>
-          <threshold>100000.000000</threshold>
+          <restitution_coefficient>0.8</restitution_coefficient>
         </bounce>
         <contact>
           <poissons_ratio>0.49</poissons_ratio>

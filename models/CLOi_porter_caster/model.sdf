@@ -41,7 +41,7 @@
       <max_contacts>0</max_contacts>
       <geometry>
         <mesh>
-          <uri>model://CLOi_porter_caster/meshes/caster_hinge.stl</uri>
+          <uri>model://CLOi_porter_caster/meshes/caster_hinge_collision.stl</uri>
         </mesh>
       </geometry>
       <surface>
@@ -102,7 +102,6 @@
         <friction>
           <ode>
             <mu>0.05</mu>
-            <mu2>0.0</mu2>
             <fdir1>0 0 1</fdir1>
             <slip1>0.1</slip1>
             <slip2>0.1</slip2>

@@ -5,12 +5,12 @@
    <inertial>
       <mass>59</mass>
       <inertia>
-        <ixx>11.12720579</ixx>
+        <ixx>0.7</ixx>
         <ixy>0</ixy>
         <ixz>0</ixz>
-        <iyy>11.12720579</iyy>
+        <iyy>0.7</iyy>
         <iyz>0</iyz>
-        <izz>4.97425747</izz>
+        <izz>2</izz>
       </inertia>
       <pose>0 0 0.25 0 -0 0</pose>
     </inertial>
@@ -34,11 +34,11 @@
       <cast_shadows>0</cast_shadows>
     </visual>
 
-    <collision name='collision_main_base'>
+    <collision name='collision_main_body'>
       <max_contacts>2</max_contacts>
       <geometry>
         <mesh>
-          <uri>model://CLOi_porter/meshes/CLOi_porter.obj</uri>
+          <uri>model://CLOi_porter/meshes/main_body_collision.stl</uri>
           <scale>1 1 1</scale>
         </mesh>
       </geometry>
@@ -65,6 +65,34 @@
         </contact>
       </surface>
     </collision>
+    <collision name='collision_cart'>
+      <max_contacts>2</max_contacts>
+      <geometry>
+        <mesh>
+          <uri>model://CLOi_porter/meshes/cart_collision.stl</uri>
+          <scale>1 1 1</scale>
+        </mesh>
+      </geometry>
+    </collision>
+    <collision name='collision_neck'>
+      <max_contacts>2</max_contacts>
+      <geometry>
+        <mesh>
+          <uri>model://CLOi_porter/meshes/neck_collision.stl</uri>
+          <scale>1 1 1</scale>
+        </mesh>
+      </geometry>
+    </collision>
+    <collision name='collision_head'>
+      <max_contacts>2</max_contacts>
+      <geometry>
+        <mesh>
+          <uri>model://CLOi_porter/meshes/head_collision.stl</uri>
+          <scale>1 1 1</scale>
+        </mesh>
+      </geometry>
+    </collision>
+
     <battery name="linear_battery">
       <voltage>42</voltage>
     </battery>
@@ -88,12 +116,12 @@
       <limit>
         <upper>0.04</upper>
         <lower>0.0</lower>
-        <effort>30</effort>
+        <effort>300</effort>
       </limit>
       <dynamics>
-        <friction>0.5</friction>
-        <damping>70</damping>
-        <spring_stiffness>80</spring_stiffness>
+        <friction>0.1</friction>
+        <damping>320</damping>
+        <spring_stiffness>8200</spring_stiffness>
       </dynamics>
     </axis>
   </joint>
@@ -102,8 +130,12 @@
     <child>wheel_left::link</child>
     <axis>
       <xyz>0 0 1</xyz>
+      <limit>
+        <effort>50</effort>
+      </limit>
       <dynamics>
-        <friction>0.01</friction>
+        <friction>0.001</friction>
+        <damping>12</damping>
       </dynamics>
     </axis>
   </joint>
@@ -126,12 +158,12 @@
       <limit>
         <upper>0.04</upper>
         <lower>0.0</lower>
-        <effort>30</effort>
+        <effort>300</effort>
       </limit>
       <dynamics>
-        <friction>0.5</friction>
-        <damping>70</damping>
-        <spring_stiffness>80</spring_stiffness>
+        <friction>0.1</friction>
+        <damping>320</damping>
+        <spring_stiffness>8200</spring_stiffness>
       </dynamics>
     </axis>
   </joint>
@@ -140,8 +172,12 @@
     <child>wheel_right::link</child>
     <axis>
       <xyz>0 0 -1</xyz>
+      <limit>
+        <effort>50</effort>
+      </limit>
       <dynamics>
-        <friction>0.01</friction>
+        <friction>0.001</friction>
+        <damping>12</damping>
       </dynamics>
     </axis>
   </joint>
@@ -320,7 +356,8 @@
     <child>rear_lidar::link</child>
   </joint-->
 
-  <plugin name='RobotControl' filename='libMicomPlugin.so'>
+  <plugin name='MicomRobotControl' filename='libMicomPlugin.so'>
+    <imu>imu</imu>
     <uss>
       <!-- <sensor>USS_left1</sensor> -->
     </uss>
@@ -333,20 +370,16 @@
     </bumper>
     <wheel>
       <PID>
-        <kp>1.0</kp>
-        <ki>0.05</ki>
-        <kd>0.0</kd>
+        <kp>1.1</kp>
+        <ki>0.01</ki>
+        <kd>0</kd>
       </PID>
-      <tread>0.449</tread>
-      <radius>0.0955</radius>
+      <separation>0.475</separation>
+      <radius>0.1</radius>
       <location type="left">wheel_left</location>
       <location type="right">wheel_right</location>
-      <friction>
-        <motor>0.06</motor>
-        <brake>13.0</brake>
-      </friction>
     </wheel>
-    <update_rate>20</update_rate>
+    <update_rate>50</update_rate>
     <ros2>
       <static_transforms>
         <link parent_frame_id="base_link">link_imu</link>

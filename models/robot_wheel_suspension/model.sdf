@@ -11,7 +11,7 @@
         <ixz>0</ixz>
         <iyy>0.00172717</iyy>
         <iyz>0</iyz>
-        <izz>0.00012100</izz>
+        <izz>0.012100</izz>
       </inertia>
     </inertial>
 
@@ -20,7 +20,7 @@
     <collision name="collision">
       <geometry>
         <cylinder>
-          <radius>0.011</radius>
+          <radius>0.013</radius>
           <length>0.10</length>
         </cylinder>
       </geometry>
@@ -28,7 +28,7 @@
     <visual name="visual">
       <geometry>
         <cylinder>
-          <radius>0.011</radius>
+          <radius>0.013</radius>
           <length>0.10</length>
         </cylinder>
       </geometry>

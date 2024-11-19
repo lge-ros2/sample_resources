@@ -44,17 +44,17 @@
     </collision>
 
     <sensor name="VLP-16_laser" type="gpu_ray">
-      <pose>0 0 0 0 -0 0</pose>
       <ray>
         <scan>
           <horizontal>
-            <samples>720</samples>
+            <samples>360</samples>
             <resolution>1</resolution>
-            <min_angle>-3.14</min_angle>
-            <max_angle>+3.14</max_angle>
+            <min_angle>-3.1415926</min_angle>
+            <max_angle>+3.1415926</max_angle>
           </horizontal>
           <vertical>
-            <samples>16</samples>
+            <samples>3</samples>
+            <resolution>1</resolution>
             <min_angle>-0.17</min_angle>
             <max_angle>0.17</max_angle>
           </vertical>
@@ -67,7 +67,7 @@
       </ray>
       <!--<noise></noise>-->
       <always_on>true</always_on>
-      <update_rate>30</update_rate>
+      <update_rate>5</update_rate>
       <visualize>false</visualize>
 
       <plugin name="LaserPlugin" filename="libLaserPlugin.so" >

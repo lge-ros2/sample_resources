@@ -1,12 +1,13 @@
 <?xml version="1.0" ?>
-<sdf version="1.6">
-<world name="lg_seocho_world">
+<sdf version="1.11">
+<world name="empty">
   <gui>
     <!-- <camera name="user_camera">
       <pose>10 -29.29 10 0 0.523 1.5707</pose>
     </camera> -->
     <camera name="user_camera">
-      <pose>3.3184821606 -19.8310699463 1.6386370659 -0.0000000040 0.4425958549 2.1718371304</pose>
+      <!-- <pose>3.3184821606 -19.8310699463 1.6386370659 -0.0000000040 0.4425958549 2.1718371304</pose> -->
+      <pose>2.0550832748 -1.8407942057 1.7098816633 -0.0000000020 0.5458339444 2.3275554655</pose>
     </camera>
   </gui>
 
@@ -16,12 +17,48 @@
     <diffuse>0.9528302 0.9528302 0.9528302 1</diffuse>
     <direction>0 0 -1</direction>
   </light>
+  
+  <!-- <include>
+    <name>L9S</name>
+    <uri>model://L9S</uri>
+    <pose>2 0 0 0 0 0</pose>
+  </include> -->
+
+  <!-- <include>
+    <name>NR</name>
+    <uri>model://CordZero_NR</uri>
+    <pose>0 2 0 0 0 0</pose>
+  </include> -->
 
   <include>
+    <name>CLOiD</name>
+    <uri>model://CLOiD</uri>
+    <pose>0 0 0 0 0 0</pose>
+  </include> 
+
+  <!-- <include>
+    <name>robosense_airy</name>
+    <uri>model://robosense_airy</uri>
+    <pose>0 0 0 0 0 0</pose>
+  </include> -->
+
+  <!-- <include>
+    <name>NR</name>
+    <uri>model://CordZero_NR</uri>
+    <pose>1.676 -17.615 0 0 0 0</pose>
+  </include> -->
+
+  <!-- <include>
+    <name>R7</name>
+    <uri>model://R7</uri>
+    <pose>1.676 -18.615 0 0 0 0</pose>
+  </include> -->
+
+  <!-- <include>
     <name>cloi1</name>
     <uri>model://CLOi_porter</uri>
     <pose>2.3007 -17.3954 0.24 0 0 0</pose>
-  </include>
+  </include> -->
 
   <!-- <include>
     <name>CLOi</name>
@@ -62,5 +99,20 @@
     <uri>model://spot</uri>
     <pose>0 0 0.75 0 0 0</pose>
   </include> -->
+  <plugin name="GroundTruthPlugin" filename="libGroundTruthPlugin.so">
+    <publish_frequency>30</publish_frequency>
+    <props enable="true">
+      <prop class_id="10">box</prop>
+      <prop class_id="11">cylinder</prop>
+      <prop class_id="12">sphere</prop>
+    </props>
+    <list>
+      
+      <target tracking_id="1" class_id="101">CLOiD</target>
+      <target tracking_id="2" class_id="102">NR</target>
+      <target tracking_id="3" class_id="103">L9S</target>
+      <target tracking_id="4" class_id="101">hmc_v1_n</target>
+    </list>
+  </plugin>
 </world>
 </sdf>

@@ -1,0 +1,300 @@
+<?xml version="1.0" ?>
+<sdf version="1.9">
+  <world name="pbr_material_test_world">
+    <gravity>0 0 -9.8</gravity>
+
+    <!--
+      PBR visual check layout:
+      - Row A (y=-1.8): metal workflow, roughness ramp (0.05 -> 0.90)
+      - Row B (y= 0.0): dielectric workflow, roughness ramp (0.05 -> 0.90)
+      - Row C (y= 1.8): specular workflow, glossiness ramp (0.95 -> 0.05)
+    -->
+
+    <scene>
+      <ambient>0.28 0.28 0.28 1</ambient>
+      <background>0.80 0.88 0.96 1</background>
+    </scene>
+
+    <gui fullscreen="0">
+      <camera name="pbr_test_camera">
+        <pose>-3.71800184249878 -12.6254091262817 10.2779178619385 1.49236509263447E-08 0.450299817065732 1.38231500457794</pose>
+        <view_controller>orbit</view_controller>
+        <projection_type>perspective</projection_type>
+      </camera>
+    </gui>
+
+    <!-- Key / fill / rim + small highlight light -->
+    <light name="key_light" type="directional">
+      <cast_shadows>true</cast_shadows>
+      <pose>0 -8 10 0 0 0</pose>
+      <diffuse>1.0 1.0 1.0 1</diffuse>
+      <specular>1.0 1.0 1.0 1</specular>
+      <direction>-0.20 0.60 -0.77</direction>
+    </light>
+
+    <light name="fill_light" type="directional">
+      <cast_shadows>false</cast_shadows>
+      <pose>0 9 8 0 0 0</pose>
+      <diffuse>0.34 0.36 0.40 1</diffuse>
+      <specular>0.18 0.20 0.22 1</specular>
+      <direction>0.10 -0.82 -0.56</direction>
+    </light>
+
+    <light name="rim_light" type="spot">
+      <cast_shadows>false</cast_shadows>
+      <pose>0 5 6 0 0 0</pose>
+      <diffuse>0.80 0.82 0.88 1</diffuse>
+      <specular>0.65 0.68 0.74 1</specular>
+      <attenuation>
+        <range>30</range>
+        <constant>0.8</constant>
+        <linear>0.02</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>0 -0.92 -0.38</direction>
+      <spot>
+        <inner_angle>0.32</inner_angle>
+        <outer_angle>0.62</outer_angle>
+        <falloff>0.8</falloff>
+      </spot>
+    </light>
+
+    <light name="highlight_light" type="point">
+      <cast_shadows>false</cast_shadows>
+      <pose>0 -2.8 2.6 0 0 0</pose>
+      <diffuse>1.0 1.0 1.0 1</diffuse>
+      <specular>1.0 1.0 1.0 1</specular>
+      <attenuation>
+        <range>16</range>
+        <constant>0.55</constant>
+        <linear>0.03</linear>
+        <quadratic>0.0015</quadratic>
+      </attenuation>
+    </light>
+
+    <model name="ground">
+      <static>true</static>
+      <pose>0 0 -0.05 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>24 18 0.1</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>24 18 0.1</size>
+            </box>
+          </geometry>
+          <material>
+            <diffuse>0.56 0.58 0.62 1</diffuse>
+            <specular>0.04 0.04 0.04 1</specular>
+            <pbr>
+              <metal>
+                <metalness>0.0</metalness>
+                <roughness>0.90</roughness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="back_wall">
+      <static>true</static>
+      <pose>0 4.8 3.6 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>24 0.1 7.2</size>
+            </box>
+          </geometry>
+          <material>
+            <diffuse>0.76 0.79 0.84 1</diffuse>
+            <specular>0.08 0.08 0.08 1</specular>
+            <pbr>
+              <metal>
+                <metalness>0.0</metalness>
+                <roughness>0.72</roughness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- row markers (visual labels) -->
+    <model name="row_marker_metal">
+      <static>true</static>
+      <pose>-6.4 -1.8 0.25 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.25 0.25 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <diffuse>0.75 0.75 0.75 1</diffuse>
+            <emissive>0.04 0.04 0.04 1</emissive>
+            <pbr>
+              <metal>
+                <metalness>0.0</metalness>
+                <roughness>0.60</roughness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="row_marker_dielectric">
+      <static>true</static>
+      <pose>-6.4 0 0.25 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.25 0.25 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <diffuse>0.07 0.28 0.95 1</diffuse>
+            <emissive>0.01 0.03 0.08 1</emissive>
+            <pbr>
+              <metal>
+                <metalness>0.0</metalness>
+                <roughness>0.35</roughness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="row_marker_specular">
+      <static>true</static>
+      <pose>-6.4 1.8 0.25 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.25 0.25 0.5</size>
+            </box>
+          </geometry>
+          <material>
+            <diffuse>0.90 0.20 0.18 1</diffuse>
+            <emissive>0.07 0.01 0.01 1</emissive>
+            <pbr>
+              <metal>
+                <metalness>0.0</metalness>
+                <roughness>0.35</roughness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Metal workflow row: roughness 0.05 -> 0.90 -->
+    <model name="metal_r005">
+      <static>true</static>
+      <pose>-5 -1.8 0.45 0 0 0</pose>
+      <link name="link"><visual name="v"><geometry><sphere><radius>0.45</radius></sphere></geometry><material><diffuse>0.86 0.86 0.86 1</diffuse><pbr><metal><metalness>1.0</metalness><roughness>0.05</roughness></metal></pbr></material></visual></link>
+    </model>
+    <model name="metal_r020">
+      <static>true</static>
+      <pose>-3 -1.8 0.45 0 0 0</pose>
+      <link name="link"><visual name="v"><geometry><sphere><radius>0.45</radius></sphere></geometry><material><diffuse>0.86 0.86 0.86 1</diffuse><pbr><metal><metalness>1.0</metalness><roughness>0.20</roughness></metal></pbr></material></visual></link>
+    </model>
+    <model name="metal_r035">
+      <static>true</static>
+      <pose>-1 -1.8 0.45 0 0 0</pose>
+      <link name="link"><visual name="v"><geometry><sphere><radius>0.45</radius></sphere></geometry><material><diffuse>0.86 0.86 0.86 1</diffuse><pbr><metal><metalness>1.0</metalness><roughness>0.35</roughness></metal></pbr></material></visual></link>
+    </model>
+    <model name="metal_r050">
+      <static>true</static>
+      <pose>1 -1.8 0.45 0 0 0</pose>
+      <link name="link"><visual name="v"><geometry><sphere><radius>0.45</radius></sphere></geometry><material><diffuse>0.86 0.86 0.86 1</diffuse><pbr><metal><metalness>1.0</metalness><roughness>0.50</roughness></metal></pbr></material></visual></link>
+    </model>
+    <model name="metal_r070">
+      <static>true</static>
+      <pose>3 -1.8 0.45 0 0 0</pose>
+      <link name="link"><visual name="v"><geometry><sphere><radius>0.45</radius></sphere></geometry><material><diffuse>0.86 0.86 0.86 1</diffuse><pbr><metal><metalness>1.0</metalness><roughness>0.70</roughness></metal></pbr></material></visual></link>
+    </model>
+    <model name="metal_r090">
+      <static>true</static>
+      <pose>5 -1.8 0.45 0 0 0</pose>
+      <link name="link"><visual name="v"><geometry><sphere><radius>0.45</radius></sphere></geometry><material><diffuse>0.86 0.86 0.86 1</diffuse><pbr><metal><metalness>1.0</metalness><roughness>0.90</roughness></metal></pbr></material></visual></link>
+    </model>
+
+    <!-- Dielectric row: same roughness ramp for direct comparison -->
+    <model name="dielectric_r005">
+      <static>true</static>
+      <pose>-5 0 0.45 0 0 0</pose>
+      <link name="link"><visual name="v"><geometry><sphere><radius>0.45</radius></sphere></geometry><material><diffuse>0.04 0.20 0.95 1</diffuse><pbr><metal><metalness>0.0</metalness><roughness>0.05</roughness></metal></pbr></material></visual></link>
+    </model>
+    <model name="dielectric_r020">
+      <static>true</static>
+      <pose>-3 0 0.45 0 0 0</pose>
+      <link name="link"><visual name="v"><geometry><sphere><radius>0.45</radius></sphere></geometry><material><diffuse>0.04 0.20 0.95 1</diffuse><pbr><metal><metalness>0.0</metalness><roughness>0.20</roughness></metal></pbr></material></visual></link>
+    </model>
+    <model name="dielectric_r035">
+      <static>true</static>
+      <pose>-1 0 0.45 0 0 0</pose>
+      <link name="link"><visual name="v"><geometry><sphere><radius>0.45</radius></sphere></geometry><material><diffuse>0.04 0.20 0.95 1</diffuse><pbr><metal><metalness>0.0</metalness><roughness>0.35</roughness></metal></pbr></material></visual></link>
+    </model>
+    <model name="dielectric_r050">
+      <static>true</static>
+      <pose>1 0 0.45 0 0 0</pose>
+      <link name="link"><visual name="v"><geometry><sphere><radius>0.45</radius></sphere></geometry><material><diffuse>0.04 0.20 0.95 1</diffuse><pbr><metal><metalness>0.0</metalness><roughness>0.50</roughness></metal></pbr></material></visual></link>
+    </model>
+    <model name="dielectric_r070">
+      <static>true</static>
+      <pose>3 0 0.45 0 0 0</pose>
+      <link name="link"><visual name="v"><geometry><sphere><radius>0.45</radius></sphere></geometry><material><diffuse>0.04 0.20 0.95 1</diffuse><pbr><metal><metalness>0.0</metalness><roughness>0.70</roughness></metal></pbr></material></visual></link>
+    </model>
+    <model name="dielectric_r090">
+      <static>true</static>
+      <pose>5 0 0.45 0 0 0</pose>
+      <link name="link"><visual name="v"><geometry><sphere><radius>0.45</radius></sphere></geometry><material><diffuse>0.04 0.20 0.95 1</diffuse><pbr><metal><metalness>0.0</metalness><roughness>0.90</roughness></metal></pbr></material></visual></link>
+    </model>
+
+    <!-- Specular workflow row: glossiness 0.95 -> 0.05 -->
+    <model name="specular_g095">
+      <static>true</static>
+      <pose>-5 1.8 0.45 0 0 0</pose>
+      <link name="link"><visual name="v"><geometry><cylinder><radius>0.40</radius><length>0.90</length></cylinder></geometry><material><diffuse>0.90 0.25 0.20 1</diffuse><specular>0.90 0.90 0.90 1</specular><pbr><specular><glossiness>0.95</glossiness></specular></pbr></material></visual></link>
+    </model>
+    <model name="specular_g075">
+      <static>true</static>
+      <pose>-3 1.8 0.45 0 0 0</pose>
+      <link name="link"><visual name="v"><geometry><cylinder><radius>0.40</radius><length>0.90</length></cylinder></geometry><material><diffuse>0.90 0.25 0.20 1</diffuse><specular>0.90 0.90 0.90 1</specular><pbr><specular><glossiness>0.75</glossiness></specular></pbr></material></visual></link>
+    </model>
+    <model name="specular_g055">
+      <static>true</static>
+      <pose>-1 1.8 0.45 0 0 0</pose>
+      <link name="link"><visual name="v"><geometry><cylinder><radius>0.40</radius><length>0.90</length></cylinder></geometry><material><diffuse>0.90 0.25 0.20 1</diffuse><specular>0.90 0.90 0.90 1</specular><pbr><specular><glossiness>0.55</glossiness></specular></pbr></material></visual></link>
+    </model>
+    <model name="specular_g035">
+      <static>true</static>
+      <pose>1 1.8 0.45 0 0 0</pose>
+      <link name="link"><visual name="v"><geometry><cylinder><radius>0.40</radius><length>0.90</length></cylinder></geometry><material><diffuse>0.90 0.25 0.20 1</diffuse><specular>0.90 0.90 0.90 1</specular><pbr><specular><glossiness>0.35</glossiness></specular></pbr></material></visual></link>
+    </model>
+    <model name="specular_g020">
+      <static>true</static>
+      <pose>3 1.8 0.45 0 0 0</pose>
+      <link name="link"><visual name="v"><geometry><cylinder><radius>0.40</radius><length>0.90</length></cylinder></geometry><material><diffuse>0.90 0.25 0.20 1</diffuse><specular>0.90 0.90 0.90 1</specular><pbr><specular><glossiness>0.20</glossiness></specular></pbr></material></visual></link>
+    </model>
+    <model name="specular_g005">
+      <static>true</static>
+      <pose>5 1.8 0.45 0 0 0</pose>
+      <link name="link"><visual name="v"><geometry><cylinder><radius>0.40</radius><length>0.90</length></cylinder></geometry><material><diffuse>0.90 0.25 0.20 1</diffuse><specular>0.90 0.90 0.90 1</specular><pbr><specular><glossiness>0.05</glossiness></specular></pbr></material></visual></link>
+    </model>
+
+  </world>
+</sdf>

@@ -381,10 +381,15 @@
     </wheel>
     <update_rate>50</update_rate>
     <ros2>
+      <frame_id>link_MainBody</frame_id>
       <static_transforms>
-        <link parent_frame_id="base_link">link_imu</link>
-        <link parent_frame_id="base_link">SuspensionLeft::link</link>
-        <link parent_frame_id="base_link">SuspensionRight::link</link>
+        <link parent_frame_id="link_MainBody">imu::link_imu</link>
+        <link parent_frame_id="link_MainBody">camera::link</link>
+        <link parent_frame_id="link_MainBody">depthcamera::link</link>
+        <link parent_frame_id="link_MainBody">lidar::link</link>
+        <link parent_frame_id="link_MainBody">gps::link</link>
+        <link parent_frame_id="link_MainBody">SuspensionLeft::link</link>
+        <link parent_frame_id="link_MainBody">SuspensionRight::link</link>
       </static_transforms>
       <transforms>
         <link parent_frame_id="SuspensionLeft::link">wheel_left::link</link>
